@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100">
+        <div className="w-screen h-screen bg-gradient-to-b from-blue-50 to-red-100 font-commonText text-lg">
           <div className="bg-slate-400 h-20 px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
             <Header />
           </div>
