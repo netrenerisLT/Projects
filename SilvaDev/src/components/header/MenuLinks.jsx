@@ -1,12 +1,11 @@
 "use client";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 export default function MenuLinks() {
   const path = usePathname();
   const defaultStyle =
-    "border-b-2 border-white hover:border-tigerEye hover:border-b-2";
+    "border-b-2 border-transparent hover:border-tigerEye hover:border-b-2";
   const activeStyle = "border-b-2 border-tigerEye";
 
   const LINKS = [
@@ -17,13 +16,13 @@ export default function MenuLinks() {
   return (
     <>
       {LINKS.map((link) => (
-        <Link href={link.url} key={link.title}>
-          <motion.li
-            className={path.startsWith(link.url) ? activeStyle : defaultStyle}
-          >
+        <li
+          className={path.startsWith(link.url) ? activeStyle : defaultStyle}
+        >
+          <Link href={link.url} key={link.title}>
             {link.title}
-          </motion.li>
-        </Link>
+          </Link>
+        </li>
       ))}
     </>
   );
