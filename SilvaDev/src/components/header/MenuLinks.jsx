@@ -11,7 +11,6 @@ const LINKS = [
 
 const lineMotion = {
   offHover: {
-    scale: 0,
     transition: {
       type: "spring",
       stiffness: 40,
@@ -61,12 +60,12 @@ export default function MenuLinks({ offMobileMenu }) {
           key={link.title}
         >
           <motion.div variants={textMotion}>
-            <Link href={link.url} key={link.title}>
+            <Link href={link.url} key={link.title} className="px-1 py-2">
               {link.title}
             </Link>
           </motion.div>
           <motion.div
-            initial={false}
+            initial={{ scale: 0 }}
             variants={lineMotion}
             className="w-full h-0.5 bg-tigerEye"
           />
