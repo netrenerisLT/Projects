@@ -25,6 +25,9 @@ const variants = {
 export default function MobileMenu() {
   const [activeMobile, setActiveMobile] = useState(false);
 
+  function handleClick() {
+    setActiveMobile(false);
+  }
   return (
     <motion.div
       className="flex md:hidden"
@@ -35,7 +38,7 @@ export default function MobileMenu() {
         variants={variants}
         initial={false}
       >
-        <MenuLinks setActiveMobile={setActiveMobile} />
+        <MenuLinks offMobileMenu={handleClick} />
       </motion.ul>
 
       <motion.button
@@ -45,7 +48,7 @@ export default function MobileMenu() {
           transition: { duration: 1, type: "spring" },
           scale: 1.1,
         }}
-      whileTap={{ scale: 0.9 }}
+        whileTap={{ scale: 0.9 }}
       >
         <svg
           width="23"

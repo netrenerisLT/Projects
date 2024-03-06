@@ -6,7 +6,7 @@
 
 @layer components {
   .btnLight {
-    @apply ring-2 ring-tigerEye bg-white text-tigerEye;
+    @apply ring-2 ring-tigerEye text-tigerEye;
   }
   .btnDark {
     @apply ring-2 ring-darkMossGreen bg-darkMossGreen text-white;
