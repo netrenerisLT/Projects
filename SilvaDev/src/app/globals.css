@@ -3,3 +3,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btnLight {
+    @apply ring-2 ring-tigerEye bg-white text-tigerEye;
+  }
+  .btnDark {
+    @apply ring-2 ring-darkMossGreen bg-darkMossGreen text-white;
+  }
+  .btnDefault {
+    @apply font-bold p-3 w-auto font-unusualText capitalize text-xl;
+  }
+
+  .textParagprah {
+    @apply font-commonText text-lg md:text-xl;
+  }
+  .textHeader {
+    @apply font-unusualText text-4xl capitalize md:text-6xl;
+  }
+}

@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 const variants = {
   open: {
-    clipPath: "circle(1200px at calc(100% - 40px) 50px)",
+    clipPath: "circle(1600px at calc(100% - 40px) 50px)",
     transition: {
       type: "spring",
       stiffness: 20,
     },
   },
   closed: {
-    clipPath: "circle(30px at calc(100% - 40px) 38px)",
+    clipPath: "circle(0px at calc(100% - 40px) 38px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -22,24 +22,30 @@ const variants = {
   },
 };
 
-export default function MobileMenu({ links }) {
-  const [open, setOpen] = useState(false);
+export default function MobileMenu() {
+  const [activeMobile, setActiveMobile] = useState(false);
 
   return (
     <motion.div
       className="flex md:hidden"
-      animate={open ? "open" : "closed"}
+      animate={activeMobile ? "open" : "closed"}
     >
       <motion.ul
-        className="fixed right-52 top-0 left-0 bottom-0 w-screen h-screen flex flex-col items-center justify-center gap-8 bg-darkMossGreen text-white "
+        className="absolute top-0 left-0 bottom-0 w-screen h-screen flex flex-col items-center justify-center gap-8 bg-darkMossGreen text-white z-50"
         variants={variants}
+        initial={false}
       >
-        <MenuLinks />
+        <MenuLinks setActiveMobile={setActiveMobile} />
       </motion.ul>
 
-      <button
-        className="w-12 h-12 flex flex-col justify-center items-center z-50"
-        onClick={() => setOpen(!open)}
+      <motion.button
+        className="w-12 h-12 flex flex-col justify-center items-center z-50 bg-darkMossGreen rounded-full"
+        onClick={() => setActiveMobile(!activeMobile)}
+        whileHover={{
+          transition: { duration: 1, type: "spring" },
+          scale: 1.1,
+        }}
+      whileTap={{ scale: 0.9 }}
       >
         <svg
           width="23"
@@ -56,6 +62,7 @@ export default function MobileMenu({ links }) {
               closed: { d: "M 2 2.5 L 20 2.5" },
               open: { d: "M 3 16.5 L 17 2.5" },
             }}
+            initial={false}
           />
           <motion.path
             // d="M4 12L20 12"
@@ -67,6 +74,7 @@ export default function MobileMenu({ links }) {
               closed: { opacity: 1 },
               open: { opacity: 0 },
             }}
+            initial={false}
           />
           <motion.path
             // d="M4 6L20 6"
@@ -77,9 +85,10 @@ export default function MobileMenu({ links }) {
               closed: { d: "M 2 16.346 L 20 16.346" },
               open: { d: "M 3 2.5 L 17 16.346" },
             }}
+            initial={false}
           />
         </svg>
-      </button>
+      </motion.button>
     </motion.div>
   );
 }
