@@ -21,6 +21,15 @@ const variants = {
     },
   },
 };
+const navLinksMotion = {
+  y: [50, 0],
+  opacity: [0, 1],
+  transition: {
+    type: "spring",
+    stiffness: 250,
+    damping: 40,
+  },
+};
 
 export default function MobileMenu() {
   const [activeMobile, setActiveMobile] = useState(false);
@@ -38,7 +47,10 @@ export default function MobileMenu() {
         variants={variants}
         initial={false}
       >
-        <MenuLinks offMobileMenu={handleClick} />
+        <MenuLinks
+          navLinksMotion={navLinksMotion}
+          offMobileMenu={handleClick}
+        />
       </motion.ul>
 
       <motion.button

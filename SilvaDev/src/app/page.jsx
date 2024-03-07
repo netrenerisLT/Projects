@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import Services from "@/components/services/Services";
 import Image from "next/image";
 
 const Homepage = () => {
@@ -64,6 +65,7 @@ const Homepage = () => {
         </div>
 
         <div className="mt-40">
+          <Services />
         </div>
       </div>
     </>

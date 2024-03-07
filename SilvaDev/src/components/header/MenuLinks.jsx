@@ -4,9 +4,9 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 const LINKS = [
-  { url: "/", title: "About" },
-  { url: "/portfolio", title: "Portfolio" },
-  { url: "/contact", title: "Contact" },
+  { url: "/", title: "Apie" },
+  { url: "/portfolio", title: "Atlikti Darbai" },
+  { url: "/contact", title: "Susisiekti" },
 ];
 
 const lineMotion = {
@@ -43,12 +43,13 @@ const textMotion = {
   },
 };
 
-export default function MenuLinks({ offMobileMenu }) {
+export default function MenuLinks({ offMobileMenu, navLinksMotion }) {
   const path = usePathname();
   return (
     <>
       {LINKS.map((link) => (
         <motion.li
+          whileInView={navLinksMotion}
           onClick={offMobileMenu}
           whileHover="onHover"
           whileTap="onTap"
