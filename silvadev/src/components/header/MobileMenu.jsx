@@ -44,9 +44,10 @@ export default function MobileMenu() {
   }
   return (
     <motion.div
-    ref={ref}
+      ref={ref}
       className="flex flex-col absolute z-10 "
       animate={activeMobile ? "open" : "closed"}
+      style={{ opacity: scrollYProgress }}
     >
       <motion.ul
         className="flex flex-col items-center fixed justify-center top-2 left-2 gap-8 h-[calc(100%-16px)] max-w-md w-[calc(100%-16px)] z-10 bg-darkMossGreen text-white"
@@ -60,14 +61,15 @@ export default function MobileMenu() {
       </motion.ul>
 
       <motion.button
-      style={{ opacity: scrollYProgress }}
+        style={{ scale: scrollYProgress }}
         className="flex w-16 h-16 flex-col justify-center fixed items-center top-2 left-2 z-50 m-2 bg-darkMossGreen rounded-full"
         onClick={() => setActiveMobile(!activeMobile)}
         whileHover={{
           transition: { duration: 1, type: "spring" },
-          scale: 1.1,
+          scaleX: 1.1,
+          scaleY: 1.1,
         }}
-        whileTap={{ scale: 0.9 }}
+        whileTap={{ scaleX: 0.95, scaleY: 0.95 }}
       >
         <svg
           width="28"
