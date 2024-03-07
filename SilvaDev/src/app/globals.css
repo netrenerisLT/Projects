@@ -25,3 +25,9 @@
     @apply font-unusualText text-4xl capitalize md:text-6xl mb-10;
   }
 }
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}

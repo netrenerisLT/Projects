@@ -12,8 +12,8 @@ const clipPathMotion = {
     },
   },
   offHover: {
-    clipPath: "circle(0%)",
-    opacity: 0.2,
+    clipPath: "circle(10%)",
+    opacity: 0,
     transition: {
       type: "spring",
       stiffness: 40,
@@ -29,6 +29,13 @@ const buttonMotion = {
     color: "hsl(0, 0%, 100%)",
     scale: 1.05,
     transition: { type: "spring", stiffness: 20 },
+  },
+  offHover: {
+    color: "hsl(28, 67%, 44%)",
+    transition: {
+      type: "spring",
+      stiffness: 40,
+    },
   },
   onTap: {
     scale: 0.95,
@@ -51,6 +58,7 @@ export default function Button({ onClick, children, styles }) {
         }`}
       ></motion.div>
       <motion.button
+        initial={styles === "btnLight"}
         variants={buttonMotion}
         onClick={onClick}
         className={`btnDefault ${styles}`}

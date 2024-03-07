@@ -18,7 +18,7 @@ const Homepage = () => {
         {/* Text */}
         <div className="h-1/2 flex flex-col lg:h-full lg:w-1/2 gap-8 items-center justify-center">
           <h1 className="textH1Header">
-            Lorem ipsum dolor, sit amet consectetur.
+            orem ipsum dolor, sit amet consectetur.
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -58,7 +58,7 @@ const Homepage = () => {
               </p>
             </div>
             <div className="lg:w-1/2">
-              Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+              lorem Lrem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
               Lorem Lorem Lorem Lorem Lorem Lorem Lorem
             </div>
           </div>

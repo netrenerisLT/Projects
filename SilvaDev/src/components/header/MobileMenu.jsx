@@ -1,18 +1,18 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import MenuLinks from "./MenuLinks";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const variants = {
   open: {
-    clipPath: "circle(1600px at calc(100% - 40px) 50px)",
+    clipPath: "circle(1600px at 40px 40px)",
     transition: {
       type: "spring",
       stiffness: 20,
     },
   },
   closed: {
-    clipPath: "circle(0px at calc(100% - 40px) 38px)",
+    clipPath: "circle(0px at 40px 40px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -33,17 +33,23 @@ const navLinksMotion = {
 
 export default function MobileMenu() {
   const [activeMobile, setActiveMobile] = useState(false);
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["100px", "300px"],
+  });
 
   function handleClick() {
     setActiveMobile(false);
   }
   return (
     <motion.div
-      className="flex md:hidden"
+    ref={ref}
+      className="flex flex-col absolute z-10 "
       animate={activeMobile ? "open" : "closed"}
     >
       <motion.ul
-        className="absolute top-0 left-0 bottom-0 w-screen h-screen flex flex-col items-center justify-center gap-8 bg-darkMossGreen text-white z-50"
+        className="flex flex-col items-center fixed justify-center top-2 left-2 gap-8 h-[calc(100%-16px)] max-w-md w-[calc(100%-16px)] z-10 bg-darkMossGreen text-white"
         variants={variants}
         initial={false}
       >
@@ -54,7 +60,8 @@ export default function MobileMenu() {
       </motion.ul>
 
       <motion.button
-        className="w-12 h-12 flex flex-col justify-center items-center z-50 bg-darkMossGreen rounded-full"
+      style={{ opacity: scrollYProgress }}
+        className="flex w-16 h-16 flex-col justify-center fixed items-center top-2 left-2 z-50 m-2 bg-darkMossGreen rounded-full"
         onClick={() => setActiveMobile(!activeMobile)}
         whileHover={{
           transition: { duration: 1, type: "spring" },
@@ -63,15 +70,15 @@ export default function MobileMenu() {
         whileTap={{ scale: 0.9 }}
       >
         <svg
-          width="23"
-          height="23"
-          viewBox="0 0 23 23"
+          width="28"
+          height="32"
+          viewBox="0 0 22 20"
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.path
             // d="M4 18L20 18"
             stroke="white"
-            strokeWidth="2"
+            strokeWidth="1.5"
             strokeLinecap="round"
             variants={{
               closed: { d: "M 2 2.5 L 20 2.5" },
@@ -83,7 +90,7 @@ export default function MobileMenu() {
             // d="M4 12L20 12"
             d="M 2 9.423 L 20 9.423"
             stroke="white"
-            strokeWidth="2"
+            strokeWidth="1.5"
             strokeLinecap="round"
             variants={{
               closed: { opacity: 1 },
@@ -94,11 +101,11 @@ export default function MobileMenu() {
           <motion.path
             // d="M4 6L20 6"
             stroke="white"
-            strokeWidth="2"
+            strokeWidth="1.5"
             strokeLinecap="round"
             variants={{
               closed: { d: "M 2 16.346 L 20 16.346" },
-              open: { d: "M 3 2.5 L 17 16.346" },
+              open: { d: "M 4 2.5 L 17 16.346" },
             }}
             initial={false}
           />
