@@ -1,54 +1,79 @@
 "use client";
 import { motion } from "framer-motion";
-
-const clipPathMotion = {
-  onHover: {
-    clipPath: "circle(100%)",
-    scale: 1.07,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 20,
-    },
-  },
-  offHover: {
-    clipPath: "circle(10%)",
-    opacity: 0,
-    transition: {
-      type: "spring",
-      stiffness: 40,
-    },
-  },
-  onTap: {
-    scale: 0.95,
-  },
-};
-
-const buttonMotion = {
-  onHover: {
-    color: "hsl(0, 0%, 100%)",
-    scale: 1.05,
-    transition: { type: "spring", stiffness: 20 },
-  },
-  offHover: {
-    color: "hsl(28, 67%, 44%)",
-    transition: {
-      type: "spring",
-      stiffness: 40,
-    },
-  },
-  onTap: {
-    scale: 0.95,
-  },
-};
+import { useState, useEffect } from "react";
 
 export default function Button({ onClick, children, styles }) {
+  const [activeMobile, setActiveMobile] = useState(false);
+  console.log(activeMobile);
+
+  const clipPathMotion = {
+    onHover: {
+      clipPath: "circle(100%)",
+      scale: 1.07,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 20,
+      },
+    },
+    offHover: {
+      clipPath: "circle(10%)",
+      opacity: 0,
+      transition: {
+        type: "spring",
+        stiffness: 40,
+      },
+    },
+    onTap: {
+      scale: 0.95,
+    },
+  };
+
+  let buttonTextColor;
+  if (styles === "btnLight") {
+    buttonTextColor = "hsl(28, 67%, 44%)";
+  } else {
+    buttonTextColor = "current";
+  }
+
+  const buttonMotion = {
+    onHover: {
+      color: "hsl(0, 0%, 100%)",
+      scale: 1.05,
+      transition: { type: "spring", stiffness: 20 },
+    },
+    offHover: {
+      color: buttonTextColor,
+      transition: {
+        type: "spring",
+        stiffness: 40,
+      },
+    },
+    onTap: {
+      scale: 0.95,
+    },
+  };
+
+  useEffect(() => {
+    let timer;
+    if (activeMobile) {
+      timer = setTimeout(() => {
+        setActiveMobile(false);
+      }, 1000);
+    }
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [activeMobile]);
+
   return (
     <motion.div
       className="relative"
       whileHover="onHover"
       whileTap="onTap"
-      animate="offHover"
+      // animate="offHover"
+      animate={activeMobile ? "onHover" : "offHover"}
+      onClick={() => setActiveMobile(true)}
     >
       <motion.div
         initial={clipPathMotion.offHover}
@@ -58,7 +83,6 @@ export default function Button({ onClick, children, styles }) {
         }`}
       ></motion.div>
       <motion.button
-        initial={styles === "btnLight"}
         variants={buttonMotion}
         onClick={onClick}
         className={`btnDefault ${styles}`}

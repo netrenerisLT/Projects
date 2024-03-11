@@ -1,28 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
   .btnLight {
-    @apply ring-2 ring-tigerEye text-tigerEye;
+    @apply ring-2 ring-colBlack text-colBlack;
   }
   .btnDark {
-    @apply ring-2 ring-darkMossGreen bg-darkMossGreen text-white;
+    @apply ring-2 ring-colBlack bg-colBlack text-colBlack;
   }
   .btnDefault {
-    @apply font-bold p-3 w-auto font-unusualText capitalize text-xl;
+    @apply font-bold p-3 w-auto capitalize text-font20pt;
   }
 
-  .textParagprah {
-    @apply font-commonText text-lg md:text-xl;
+  .textH1 {
+    @apply text-font80pt capitalize md:text-font80pt xl:text-font200pt mb-10 text-colWhite;
   }
-  .textH2Header {
-    @apply font-unusualText text-2xl capitalize md:text-4xl mb-10;
+  .textH2 {
+    @apply text-font80pt capitalize md:text-font80pt xl:text-font200pt mb-10 text-colWaterLeaf;
   }
-  .textH1Header {
-    @apply font-unusualText text-4xl capitalize md:text-6xl mb-10;
+  .textParagraph {
+    @apply text-font18pt md:text-font20pt xl:text-font20pt  text-colWhite;
+  }
+  .textBase {
+    @apply text-font15pt text-colWhite;
   }
 }
 

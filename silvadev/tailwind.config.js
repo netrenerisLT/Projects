@@ -7,27 +7,29 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       fontFamily: {
-        unusualText: ["Quicksand", "sans-serif"],
-        commonText: ["Raleway", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      fontSize: {
+        base: "1rem",
+        font15pt: ["1.25rem", "1.625rem"],
+        font18pt: ["1.125rem", "1.625rem"],
+        font20pt: ["1.25rem", "1.625rem"],
+        font30pt: ["1.875rem", "2rem"],
+        font50pt: ["3.125rem", "3.75rem"],
+        font80pt: ["5rem", "5rem"],
+        font200pt: ["12.5rem", "11.875rem"],
       },
     },
     colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      white: "#ffffff",
-      black: "#000000",
-      mossGreen: "#606c38",
-      darkMossGreen: "#283618",
-      cornSilk: "#fefae0",
-      earthYellow: "#DDA15E",
-      tigerEye: "#BC6C25",
+      colTransparent: "transparent",
+      colCurrent: "currentColor",
+      colWhite: "#ffffff",
+      colBlack: "#000000",
+      colJetBlack: "#343434",
+      colWaterLeaf: "#A5D6E8",
     },
   },
+
   plugins: [],
 };
