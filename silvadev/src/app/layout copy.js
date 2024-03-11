@@ -10,11 +10,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-screen h-screen  font-montserrat font-medium bg-colBlack">
-        <header className="w-screen bg-colJetBlack h-20 items-center grid gap-4 grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 px-4 md:px-8 2xl:px-14">
+      <body className="w-screen h-screen flex flex-col items-center font-montserrat font-medium bg-colBlack">
+        <header className="w-screen max-w-[2560px] bg-colJetBlack h-20 px-4 md:px-8 2xl:px-14">
           <Header />
         </header>
-        <div className="h-[calc(100vh-5rem)] w-screen">{children}</div>
+        <div className="h-[calc(100vh-5rem)] w-screen max-w-[2560px] px-4 md:px-8 2xl:px-14">
+          {children}
+        </div>
       </body>
     </html>
   );

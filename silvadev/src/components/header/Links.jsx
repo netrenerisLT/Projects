@@ -3,15 +3,15 @@ import Link from "next/link";
 const LINKS = [
   { url: "/about", title: "Apie Mus" },
   { url: "/projects", title: "Projektai" },
-  { url: "/contact", title: "Susisiekti" },
+  // { url: "/contact", title: "Susisiekti" },
 ];
 
-export default function MenuLinks({ offMobileMenu }) {
+function Links({ offMobileMenu }) {
   return (
     <>
-      {LINKS.map((link) => (
+      {LINKS.map((link, index) => (
         <li onClick={offMobileMenu} key={link.title}>
-          <Link href={link.url} key={link.title} className="text-colWhite">
+          <Link href={link.url} key={link.title} prefetch>
             {link.title}
           </Link>
         </li>
@@ -19,3 +19,5 @@ export default function MenuLinks({ offMobileMenu }) {
     </>
   );
 }
+
+export default Links;
