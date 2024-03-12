@@ -1,0 +1,9 @@
+<!-- <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="2000px"
+	xml:space="preserve">
+	<path class="path-vert" fill="#343434" stroke-width="2" stroke="#ffffff" d="M30 0 v600 400"/>
+  </svg> -->
+
+  <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none">
+	<path d="M0 0 L100 0 L50 100 Z" stroke="#ffffff" stroke-width="0.5" fill="#343434" />
+ </svg>
