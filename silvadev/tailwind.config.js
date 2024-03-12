@@ -25,6 +25,7 @@ module.exports = {
       colTransparent: "transparent",
       colCurrent: "currentColor",
       colWhite: "#ffffff",
+      colRed: "#ff0000",
       colBlack: "#000000",
       colJetBlack: "#343434",
       colWaterLeaf: "#A5D6E8",

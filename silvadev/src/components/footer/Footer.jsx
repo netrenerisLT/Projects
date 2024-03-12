@@ -4,12 +4,10 @@ import ContactForm from "../ContactForm";
 function Footer() {
   return (
     <footer className="textParagraph flex flex-col">
-      <div className="md:h-[31rem] pl-4 py-5 flex justify-end text-right items-center border-y-2 border-colJetBlack pr-4 md:pr-24 xl:pr-48  bg-colWaterLeaf">
-        <ContactForm />
-      </div>
+      <ContactForm />
       <div className="flex flex-col h-80 justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4 py-5">
         <div className="flex flex-col-reverse lg:flex-row justify-start gap-4">
-          <ul className="basis-6/12">
+          <ul className="basis-6/12 pb-4">
             <li>Interneto svetainių kūrimas</li>
             <li>Elektroninių parduotuvių kūrimas</li>
             <li>Interneto svetainių aptarnavimas</li>
