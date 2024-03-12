@@ -10,7 +10,7 @@ function LineSvg() {
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
     >
-      <path d="M0 0 L0 0 L0 200 Z" stroke="#343434" stroke-width="1" />
+      <path d="M0 0 L0 0 L0 200 Z" stroke="#343434" strokeWidth="1" />
     </svg>
   );
 }
