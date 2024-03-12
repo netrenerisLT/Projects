@@ -12,7 +12,7 @@ module.exports = {
       },
       fontSize: {
         base: "1rem",
-        font15pt: ["1.25rem", "1.625rem"],
+        font15pt: ["1rem", "1.625rem"],
         font18pt: ["1.125rem", "1.625rem"],
         font20pt: ["1.25rem", "1.625rem"],
         font30pt: ["1.875rem", "2rem"],

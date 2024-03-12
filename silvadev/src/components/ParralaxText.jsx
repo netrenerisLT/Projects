@@ -22,7 +22,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   const scrollVelocity = useVelocity(scrollY);
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 50,
-    stiffness: 400,
+    stiffness: 100,
   });
   const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
     clamp: false,
@@ -33,7 +33,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-6, -31, v)}%`);
 
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
@@ -64,13 +64,13 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="overflow-hidden flex whitespace-nowrap flex-nowrap">
       <motion.h1
-        className="text-font200pt text-colWhite flex whitespace-nowrap flex-nowrap"
+        className="textH1 flex whitespace-nowrap flex-nowrap"
         style={{ x }}
       >
-        <span className="block m-10">{children} </span>
-        <span className="block m-10">{children} </span>
-        <span className="block m-10">{children} </span>
-        <span className="block m-10">{children} </span>
+        <span className="block ml-10 mb-10">{children} </span>
+        <span className="block ml-10 mb-10">{children} </span>
+        <span className="block ml-10 mb-10">{children} </span>
+        <span className="block ml-10 mb-10">{children} </span>
       </motion.h1>
     </div>
   );
@@ -78,7 +78,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Parralax() {
   return (
-    <section className=" absolute -bottom-4">
+    <section className="absolute w-9/12 -bottom-8 xl:-bottom-4">
       <ParallaxText baseVelocity={-3}>Puslapių kūrimas</ParallaxText>
     </section>
   );
