@@ -16,9 +16,6 @@ function ContactForm() {
   const [unSuccessSubmit, setUnSuccessSubmit] = useState(false);
   const [successSubmit, setSuccessSubmit] = useState(false);
   const form = useRef();
-  const innerWidth = useRef(window.innerWidth);
-
-  console.log(innerWidth);
 
   const stylesFormInput =
     "w-full py-3 px-4 ring-1 ring-inset ring-colBlack focus:ring-colWhite bg-colTransparent placeholder-colBlack outline-none h-full ";
@@ -70,20 +67,20 @@ function ContactForm() {
 
   return (
     <div
-      className={`md:h-[31rem] h-[40rem] pl-4 py-5 flex max-md:flex-col justify-center md:justify-end text-right max-md:items-end items-center border-y-2 border-colJetBlack pr-4 md:p-12 xl:p-24 2xl:p-36  ${
+      className={`md:h-[31rem] h-[40rem] flex max-md:flex-col justify-center md:justify-end text-right max-md:items-end items-center border-y-2 border-colJetBlack pl-4 py-5 pr-4 md:p-12 xl:p-24 2xl:p-36  ${
         showForm && "bg-colWaterLeaf"
       }`}
     >
       <div className="max-md:hidden">
         {!showForm && (
-          <h2 className="textH2 mb-5" onClick={() => setShowForm(!showForm)}>
+          <h2 className="textH1 text-colWaterLeaf mb-5" onClick={() => setShowForm(!showForm)}>
             Parašyk <br /> mums
           </h2>
         )}
       </div>
       <div className="md:hidden ">
         {!successSubmit && (
-          <h2 className="textH2 mb-5 text-colBlack">
+          <h2 className="textH1 mb-5 text-colBlack">
             Parašyk <br /> mums
           </h2>
         )}

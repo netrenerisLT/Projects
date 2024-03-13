@@ -62,7 +62,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
    * dynamically generated number of children.
    */
   return (
-    <div className="overflow-hidden flex whitespace-nowrap flex-nowrap">
+    <div className="overflow-hidden col-auto flex whitespace-nowrap flex-nowrap">
       <motion.h1
         className="textH1 flex whitespace-nowrap flex-nowrap"
         style={{ x }}
@@ -78,7 +78,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Parralax() {
   return (
-    <section className="absolute w-9/12 -bottom-8 xl:-bottom-4">
+    <section className="absolute w-9/12 -bottom-8 xl:-bottom-4 ">
       <ParallaxText baseVelocity={-3}>Puslapių kūrimas</ParallaxText>
     </section>
   );

@@ -1,6 +1,7 @@
-import Services from "@/components/services/Services";
 import Image from "next/image";
 import Parralax from "../components/others/ParralaxText";
+import ServicesList from "../components/about/services/ServicesList";
+import H2Title from "../components/H2Title";
 
 const Homepage = () => {
   return (
@@ -12,17 +13,16 @@ const Homepage = () => {
           fill
           className="object-contain"
         />
-          <Parralax />
+        <Parralax />
       </div>
-      <div className="flex flex-col mt-40">
-          <h2 className="textH2Header">
-            Patyrę dizaineriai ir programuotojai, nekantraujantys paversti Jūsų
-            idėjas realybe
-          </h2>
-
-        <div className="mt-40">
-          <Services />
-        </div>
+      <div className=" relative flex flex-col mt-40 py-5 p-4 md:pr-12 xl:pr-24 2xl:pr-36 w-full">
+        <H2Title styles="text-left normal-case">
+          Mūsų ekspertų komanda daugiau nei 6 metus kuria naudotojui draugiškas
+          svetaines, kurios yra ne tik vizualiai stulbinančios ir įtraukiančios,
+          bet ir palieka ilgalaikį įspūdį. Įgyvendinsime tavo projekto viziją ir
+          sukursime profesionaliai atrodančią ir pasitikėjimo vertą svetainę.
+        </H2Title>
+        <ServicesList />
       </div>
     </>
   );

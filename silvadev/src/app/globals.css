@@ -18,7 +18,10 @@
     @apply text-font80pt capitalize xl:text-font200pt text-colWhite;
   }
   .textH2 {
-    @apply text-font80pt capitalize xl:text-font200pt text-colWaterLeaf;
+    @apply text-font30pt capitalize xl:text-font50pt text-colWaterLeaf;
+  }
+  .textH3 {
+    @apply text-font30pt capitalize xl:text-font50pt text-colWhite;
   }
   .textParagraph {
     @apply text-font18pt md:text-font20pt xl:text-font20pt text-colWhite;
