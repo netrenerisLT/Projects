@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "../ContactForm";
+import ContactForm from "../ContactForm/ContactForm";
 
 function Footer() {
   return (
@@ -24,16 +24,13 @@ function Footer() {
         </div>
         <div className="textBase flex flex-col md:flex-row md:items-center justify-between ">
           <p>Sprendimas – SilvaDev</p>
-          <p>
-            Dizainas – {""}
-            <a
-              href="https://www.aurelijabeitaite.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Aurelija Beitaitė
-            </a>
-          </p>
+          <a
+            href="https://www.aurelijabeitaite.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dizainas – Aurelija Beitaitė
+          </a>
         </div>
       </div>
     </footer>

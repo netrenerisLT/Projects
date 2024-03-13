@@ -1,7 +1,6 @@
-import Button from "@/components/Button";
 import Services from "@/components/services/Services";
 import Image from "next/image";
-import Parralax from "../components/ParralaxText";
+import Parralax from "../components/others/ParralaxText";
 
 const Homepage = () => {
   return (

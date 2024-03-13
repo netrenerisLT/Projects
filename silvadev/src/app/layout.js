@@ -1,7 +1,6 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header/Header.jsx";
-import LineSvg from "../components/LineSvg.jsx";
+import LineSvg from "../components/others/LineSvg.jsx";
 import Footer from "../components/footer/Footer.jsx";
 
 export const metadata = {

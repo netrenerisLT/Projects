@@ -1,5 +1,4 @@
-import ArrowSvg from "../components/ArrowSvg";
-import Button from "../components/Button";
+import Button from "../components/others/Button";
 
 export default function NotFound() {
   return (

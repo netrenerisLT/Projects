@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
