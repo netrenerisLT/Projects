@@ -49,11 +49,11 @@ export default function Contact() {
   return (
     <div className="grid">
       <div className="max-sm:relative max-sm:overflow-x-auto">
-        <ul className="flex flex-wrap max-sm:w-[500px] max-sm:flex-wrap md:flex md:flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 md:justify-between max-sm:overflow-x-scroll max-sm:scroll-smooth">
+        <ul className="flex flex-wrap max-sm:w-[550px] max-sm:flex-wrap md:flex md:flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 md:justify-between max-sm:overflow-x-scroll max-sm:scroll-smooth">
           {SERVICES.map((item) => (
             <li
               key={item.title}
-              className="w-[43%] md:w-[46%] box-content max-sm:flex-none "
+              className="w-[45%] md:w-[46%] box-content max-sm:flex-none "
             >
               <div>
                 <h3 className="textH3 mb-5 max-w-[30%]">{item.title}</h3>
