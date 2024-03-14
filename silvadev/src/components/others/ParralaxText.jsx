@@ -44,7 +44,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
      * switch scrolling directions.
      */
     if (velocityFactor.get() < 0) {
-      directionFactor.current = -1;
+      directionFactor.current = 1;
     } else if (velocityFactor.get() > 0) {
       directionFactor.current = 1;
     }
@@ -64,7 +64,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   return (
     <div className="overflow-hidden col-auto flex whitespace-nowrap flex-nowrap">
       <motion.h1
-        className="textH1 flex whitespace-nowrap flex-nowrap"
+        className="textH1 flex whitespace-nowrap flex-nowrap mix-blend-difference	"
         style={{ x }}
       >
         <span className="block ml-10 mb-10">{children} </span>
@@ -78,7 +78,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Parralax() {
   return (
-    <section className="absolute w-9/12 -bottom-8 xl:-bottom-4 ">
+    <section className="absolute w-9/12 -bottom-8 xl:-bottom-4 max-sm:z-50 max-sm:w-screen max-sm:-ml-[25%] ">
       <ParallaxText baseVelocity={-3}>Puslapių kūrimas</ParallaxText>
     </section>
   );

@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         {/* <header className="w-screen bg-colJetBlack h-20 items-center grid gap-4 grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 px-4 md:px-8 2xl:px-14">
           <Header />
         </header> */}
-        <header className="bg-colJetBlack h-20 fixed w-full z-[999]">
+        <header className=" h-20 fixed w-full z-50 mix-blend-difference">
           <Header />
         </header>
         <div className="flex w-screen">

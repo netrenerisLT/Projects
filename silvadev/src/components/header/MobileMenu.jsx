@@ -15,7 +15,7 @@ const variants = {
   },
   closed: {
     x: -500,
-    opacity: 0.5,
+    opacity: 1,
     transition: {
       delay: 0.2,
       type: "spring",

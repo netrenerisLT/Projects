@@ -1,23 +1,3 @@
-// function ServicesList() {
-//   return (
-//     <div className="relative overflow-x-auto">
-//       <ul className="flex flex-wrap md:gap-x-4 gap-y-32 md:justify-between max-sm:overflow-x-scroll max-sm:w-screen max-sm:ml-[70%] max-sm:snap-x max-sm:snap-mandatory max-sm:-translate-x-2/4 ">
-//         {SERVICES.map((list) => (
-//           <ServiceItem title={list.title} description={list.description} />
-//         ))}
-//       </ul>
-//     </div>
-//     // <ul className="flex flex-row flex-wrap gap-x-4 gap-y-32 justify-between overflow-hidden">
-//     //   {SERVICES.map((list) => (
-//     //     <ServiceItem title={list.title} description={list.description} />
-//     //   ))}
-//     // </ul>
-//   );
-// }
-
-// export default ServicesList;
-
-import React from "react";
 import Button from "../../others/Button";
 
 const SERVICES = [
@@ -39,7 +19,6 @@ const SERVICES = [
   },
   {
     title:
-      // "Skaitmeninis meistriškumas: socialinė rinkodara, grafinis dizainas ir kt.",
       "Skaitmeninis meistriškumas",
     description:
       "Patobulinkite savo projekto strategiją naudodami platų paslaugų spektrą. Su mūsų patikimais SEO ir socialinės rinkodaros, bei grafinio dizaino ir 2D animacijos (angl. motion) partneriais, siūlome platų paslaugų pasirinkimą, kad padidinti tavo projekto žinomumą ir auditorijos įsitraukimą.",

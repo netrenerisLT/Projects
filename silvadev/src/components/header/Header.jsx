@@ -25,9 +25,9 @@ import DesktopMenu from "./DesktopMenu";
 // }
 export default function Header() {
   return (
-    <div className="h-full flex items-center justify-between ">
+    <div className="h-full flex items-center justify-between">
       <div className="flex w-3/12 flex-none items-center justify-between h-full">
-        <Link href="/" className="bg-colWhite w-full h-full pr-10">
+        <Link href="/" className=" w-full h-full pr-10">
           {/* <Image>Logo</Image> */}
         </Link>
       </div>

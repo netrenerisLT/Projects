@@ -18,13 +18,13 @@
     @apply text-font80pt capitalize xl:text-font200pt text-colWhite;
   }
   .textH2 {
-    @apply text-font30pt capitalize xl:text-font50pt text-colWaterLeaf;
+    @apply text-font28pt md:text-font30pt capitalize xl:text-font50pt text-colWaterLeaf;
   }
   .textH3 {
-    @apply text-font30pt capitalize xl:text-font50pt text-colWhite;
+    @apply text-font28pt md:text-font30pt capitalize xl:text-font50pt text-colWhite;
   }
   .textParagraph {
-    @apply text-font18pt md:text-font20pt xl:text-font20pt text-colWhite;
+    @apply text-font15pt md:text-font20pt xl:text-font20pt text-colWhite;
   }
   .textBase {
     @apply text-font15pt text-colWhite;
