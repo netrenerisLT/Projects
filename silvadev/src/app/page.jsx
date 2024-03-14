@@ -15,7 +15,7 @@ const Homepage = () => {
         />
         <Parralax />
       </div>
-      <div className=" relative flex flex-col mt-40 py-5 p-4 md:pr-12 xl:pr-24 2xl:pr-36 w-full">
+      <div className=" relative flex flex-col mt-40 py-5 max-sm:pr-4 max-sm:pl-1 md:p-4 md:pr-12 xl:pr-24 2xl:pr-36 w-full">
         <H2Title styles="text-left normal-case">
           Mūsų ekspertų komanda daugiau nei 6 metus kuria naudotojui draugiškas
           svetaines, kurios yra ne tik vizualiai stulbinančios ir įtraukiančios,

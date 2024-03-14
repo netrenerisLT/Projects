@@ -18,10 +18,12 @@
 // export default ServicesList;
 
 import React from "react";
+import Button from "../../others/Button";
 
 const SERVICES = [
   {
-    title: "Svetainių kūrimas",
+    title: `Svetainių 
+    kūrimas`,
     description:
       "Šiandien visi yra „internete“, todėl nenorime kad susidurtumėte su apribojimais pasiekti tikslinę auditoriją. Kuriame svetaines atitinkančias tavo poreikius – nuo individualių / šabloninių svetainių iki internetinių parduotuvių ar jų integracijos su įvairiomis sistemomis ir įrankiais.",
   },
@@ -46,21 +48,27 @@ const SERVICES = [
 export default function Contact() {
   return (
     <div className="grid">
-      <div className="relative overflow-x-auto">
-        <div className="flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden p-4  undefined">
-          <ul className="max-w-md p-4 space-x-4 inline-flex overflow-x-scroll snap-x snap-mandatory scroll-smooth ">
-            {SERVICES.map((item) => (
-              <li
-                key={item.title}
-                className="flex basis-[42%] snap-start box-content flex-col"
-              >
-                <h3 className="textH3 mb-5">{item.title}</h3>
+      <div className="max-sm:relative max-sm:overflow-x-auto">
+        <ul className="flex flex-wrap max-sm:w-[500px] max-sm:flex-wrap md:flex md:flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 md:justify-between max-sm:overflow-x-scroll max-sm:scroll-smooth">
+          {SERVICES.map((item) => (
+            <li
+              key={item.title}
+              className="w-[43%] md:w-[46%] box-content max-sm:flex-none "
+            >
+              <div>
+                <h3 className="textH3 mb-5 max-w-[30%]">{item.title}</h3>
                 <p className="textParagraph">{item.description}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
+      <Button
+        styles="md:hidden absolute -left-[2.6rem] -bottom-8 pointer-events-none"
+        reverse
+      >
+        Braukite/slinkite į kairę
+      </Button>
     </div>
   );
 }
