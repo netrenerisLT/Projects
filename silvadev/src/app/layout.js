@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
         </header>
         <div className="flex w-screen">
           <div className="bg-colBlack w-3/12 z-10 relative">
-            <span className="md:hidden fixed top-0 left-[5%] h-[100%]">
+            <span className="md:hidden absolute top-10 left-[20%] h-[100%]">
               <LineSvg />
             </span>
-            <span className="fixed pl-[5%] bg-colBlack top-0 left-[20%] h-[100%]">
+            <span className="absolute top-10 left-[100%] h-[100%]">
               <LineSvg />
             </span>
           </div>
