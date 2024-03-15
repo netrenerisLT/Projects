@@ -1,4 +1,4 @@
-import TextLeftZone from "../../others/TextLeftZone";
+import TextLeftZone from "@/components/others/TextLeftZone";
 
 const SERVICES = [
   {

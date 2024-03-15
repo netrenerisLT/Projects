@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import ArrowSvg from "./ArrowSvg";
+// import ArrowIcon from "./ArrowIcon";
+import ArrowIcon from "@/components/others/ArrowIcon";
 
 export default function Button({
   onClick,
@@ -20,7 +21,7 @@ export default function Button({
         }`}
       >
         <span className={`${reverse ? "rotate-180 mr-4" : "ml-4"}`}>
-          <ArrowSvg />
+          <ArrowIcon/>
         </span>
         {children}
       </Link>

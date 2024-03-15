@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import ArrowSvg from "../../Others/ArrowSvg";
-import TextLeftZone from "../../others/TextLeftZone";
+import ArrowIcon from "@/components/others/ArrowIcon";
+import TextLeftZone from "@/components/others/TextLeftZone";
 
 const HOWWEWORK = [
   {
@@ -49,11 +49,11 @@ const Item = ({ title, index, children }) => {
             isOpen ? "rotate-90" : ""
           }`}
         >
-          <ArrowSvg />
+          <ArrowIcon />
         </span>
       </button>
       {isOpen && (
-        <div className="max-lg:pl-16 lg:pl-20 ">
+        <div className="max-lg:pl-16 lg:pl-20 max-w-[90%] ">
           <p className="textParagraph pb-10">{children}</p>
         </div>
       )}
@@ -64,13 +64,13 @@ const Item = ({ title, index, children }) => {
 export default function Accordion() {
   return (
     <>
-      <ul className="max-sm:-mb-20 md:-mb-5 w-[screen - 5%] md:w-full md:-ml-4 max-sm:-ml-[28%] max-sm:z-40 bg-colBlack relative">
+      <ul className="max-sm:-mb-[5.5rem] md:-mb-4 w-[screen - 5%] md:w-full md:-ml-4 max-sm:-ml-[28%] max-sm:z-40 bg-colBlack relative">
         <TextLeftZone styles="h-28 items-center md:items-start px-4 max-sm:border-colJetBlack max-sm:border-t-[1px] md:-ml-[33%] ">
           Kaip dirbame
         </TextLeftZone>
 
         {HOWWEWORK.map((item, index) => (
-          <Item index={index + 1} key={item.title} title={item.title}>
+          <Item key={item.title} index={index + 1} title={item.title}>
             {item.description}
           </Item>
         ))}
