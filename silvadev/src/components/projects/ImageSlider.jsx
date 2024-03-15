@@ -39,15 +39,15 @@ export default function ImageSlider({ imageUrl, title = "" }) {
   // }, [active]);
 
   return (
-    <div className="grid gap-4">
-      <div>
+    <div className="grid w-full gap-4 md:gap-8 pl-0 max-sm:-ml-[26%] max-sm:w-fit max-sm:pr-4 lg:grid-cols-6 lg:grid-rows-5">
+      <div className=" row-span-5 col-span-5">
         <img
           className="aspect-video h-auto w-full object-cover object-center"
           src={active}
           alt={title}
         />
       </div>
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid max-lg:grid-cols-5 gap-4 row-span-5 col-span-5 lg:col-span-1">
         {data.map((image, index) => (
           <div key={index + image.title}>
             <img
