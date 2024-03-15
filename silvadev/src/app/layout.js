@@ -3,6 +3,7 @@ import Header from "@/components/header/Header.jsx";
 import LineSvg from "@/components/others/LineSvg.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 import ProgressBar from "../components/others/ProgressBar";
+import MobileHeader from "@/components/header/MobileMenu";
 
 export const metadata = {
   title: "SilvaDev - Rooted inDigital",
@@ -13,9 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-full h-full font-montserrat font-medium bg-colBlack ">
-        <header className=" h-20 fixed w-full z-50 md:mix-blend-difference ">
-          <Header />
-        </header>
+        <Header />
+        <MobileHeader />
         <div className="flex w-screen">
           <ProgressBar />
           <div className="bg-colTransparent w-3/12 z-10 relative">

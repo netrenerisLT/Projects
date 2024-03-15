@@ -8,7 +8,7 @@ import LineSvg from "../others/LineSvg";
 const variants = {
   open: {
     // x: 0,
-    clipPath: "circle(1200px at 90% 5%)",
+    clipPath: "circle(1200px at 100% 0%)",
     opacity: 1,
     transition: {
       type: "spring",
@@ -18,7 +18,7 @@ const variants = {
   closed: {
     // x: 500,
     opacity: 1,
-    clipPath: "circle(0px at 90% 5%)",
+    clipPath: "circle(0px at 100% 0%)",
     transition: {
       delay: 0.2,
       type: "spring",
@@ -28,20 +28,20 @@ const variants = {
   },
 };
 
-export default function MobileMenu() {
+export default function MobileHeader() {
   const [activeMobile, setActiveMobile] = useState(false);
   function handleClick() {
     setActiveMobile(false);
   }
   return (
     <motion.div
-      className="absolute z-10 "
+      className="md:hidden"
       animate={activeMobile ? "open" : "closed"}
     >
       <motion.div
         initial={false}
         variants={variants}
-        className="fixed flex flex-col items-start justify-between top-0 left-0 p-8 h-screen max-w-md w-full z-0 bg-colWaterLeaf"
+        className="fixed flex flex-col items-start justify-between top-0 left-0 px-8 pb-4 h-screen max-w-md w-full z-50 bg-colWaterLeaf "
       >
         <span className="absolute top-0 left-[5%] h-[100%]">
           <LineSvg whiteLine />
@@ -49,11 +49,21 @@ export default function MobileMenu() {
         <span className="absolute top-0 left-[25%] h-[100%]">
           <LineSvg whiteLine />
         </span>
-        <hr />
+        <div className="flex items-center">
+          <Link href="/" className=" w-full h-full pr-10">
+            {/* <Image>Logo</Image> */}
+            logo
+          </Link>
+          <p className="textParagraph text-colBlack ">
+            Rooted <br /> inDigital
+          </p>
+        </div>
         <ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%]">
-          <Links  offMobileMenu={handleClick} />
+          <Links offMobileMenu={handleClick} />
           <li>
-            <Link onClick={handleClick} href="#footer">Susisiekti</Link>
+            <Link onClick={handleClick} href="#footer">
+              Susisiekti
+            </Link>
           </li>
         </ul>
         <div className="text-font15pt text-colWhite flex flex-col gap-4 px-[25%]">
@@ -63,7 +73,7 @@ export default function MobileMenu() {
       </motion.div>
 
       <motion.button
-        className="flex w-16 h-16 flex-col justify-center fixed items-center top-2 right-2 z-50"
+        className={`flex w-16 h-16 flex-col justify-center fixed items-center top-2 right-2 z-50 ${!activeMobile && "mix-blend-difference"}`}
         onClick={() => setActiveMobile(!activeMobile)}
         whileHover={{
           transition: { duration: 1, type: "spring" },
@@ -80,7 +90,7 @@ export default function MobileMenu() {
         >
           <motion.path
             // d="M4 18L20 18"
-            stroke="white"
+            stroke={activeMobile ? "black" : "white"}
             strokeWidth="1"
             strokeLinecap="round"
             variants={{
@@ -103,7 +113,7 @@ export default function MobileMenu() {
           />
           <motion.path
             // d="M4 6L20 6"
-            stroke="white"
+            stroke={activeMobile ? "black" : "white"}
             strokeWidth="1"
             strokeLinecap="round"
             variants={{
