@@ -1,74 +1,104 @@
-"use client";
+import H1Title from "@/components/others/H1Title";
+import ImageSlider from "@/components/projects/ImageSlider";
+import ProjectGrid from "@/components/projects/ProjectGrid";
+import React, { Suspense } from "react";
 
-import { motion } from "framer-motion";
+// async function ProjectsFetch() {
+//   const projects = await getProjects();
+//   return <ProjectGrid projects={projects} />;
+// }
 
-const draw = {
-  hidden: { pathLength: 0, opacity: 0 },
-  visible: (i) => {
-    const delay = 1 + i * 0.5;
-    return {
-      pathLength: 1,
-      opacity: 1,
-      transition: {
-        pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-        opacity: { delay, duration: 0.01 },
+const projects = [
+  {
+    title: "Dobis ir Aurelija",
+    slug: "dobis-nuostabus",
+    projectUrl: "https:www.google.com",
+    projectType: "El. parduotuve",
+    clientName: "Dobiukas maziukas",
+    coverImage: "/projects/dobis.jpg",
+    projectImages: [
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
       },
-    };
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+    ],
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    keyInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
-};
+  {
+    title: "Dobis 4ever",
+    slug: "dobis-4ever",
+    projectUrl: "https:www.google.com",
+    projectType: "El. parduotuve",
+    clientName: "Dobiukas dobiliukas",
+    coverImage: "/projects/dobis.jpg",
+    projectImages: [
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+    ],
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    keyInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    title: "Dobisver",
+    slug: "dobisever",
+    projectUrl: "https:www.google.com",
+    projectType: "El. parduotuve",
+    clientName: "Dobiukas",
+    coverImage: "/projects/dobis.jpg",
+    projectImages: [
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+      {
+        title: "Dobis",
+        imageUrl: "/projects/dobis.jpg",
+      },
+    ],
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    keyInfo:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+];
 
-export default function Portfolio() {
-  const styles = "fill-none stroke-2";
+export default function page() {
   return (
-    <>
-      <motion.svg
-        width="600"
-        height="600"
-        viewBox="0 0 600 600"
-        initial="hidden"
-        animate="visible"
+    <div className="blockStyle md:pl-0 md:pb-32">
+      <H1Title styles="-ml-[30%] max-sm:pr-4">Projektai</H1Title>
+      <Suspense
+        fallback={<p className="textParagraph">Kraunami projektai...</p>}
       >
-        <motion.circle
-          className={styles}
-          cx="100"
-          cy="100"
-          r="80"
-          stroke="#ff0055"
-          variants={draw}
-          custom={1}
-        />
-        <motion.line
-          className={styles}
-          x1="220"
-          y1="30"
-          x2="360"
-          y2="170"
-          stroke="#00cc88"
-          variants={draw}
-          custom={2}
-        />
-        <motion.line
-          className={styles}
-          x1="220"
-          y1="170"
-          x2="360"
-          y2="30"
-          stroke="#00cc88"
-          variants={draw}
-          custom={2.5}
-        />
-        <motion.rect
-          className={styles}
-          width="140"
-          height="140"
-          x="410"
-          y="30"
-          rx="20"
-          stroke="#0099ff"
-          variants={draw}
-          custom={3}
-        />
-      </motion.svg>
-    </>
+        {/* <ProjectsFetch /> */}
+        <ProjectGrid projects={projects} />
+      </Suspense>
+    </div>
   );
 }

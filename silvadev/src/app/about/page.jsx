@@ -5,7 +5,6 @@ import H2Title from "@/components/others/H2Title";
 
 export default function page() {
   return (
-    <div>
       <div className="blockStyle">
         <H1Title styles=" -ml-[30%] max-sm:pr-4">Apie Mus</H1Title>
         <H2Title styles="max-sm:-ml-[28%] text-left normal-case max-sm:pr-4">
@@ -18,6 +17,5 @@ export default function page() {
         <ServicesFull />
         <Accordion />
       </div>
-    </div>
   );
 }

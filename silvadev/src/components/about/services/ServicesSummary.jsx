@@ -4,7 +4,7 @@ const SERVICES = [
   {
     title: `Svetainių kūrimas`,
     description:
-      "Nuo idėjos iki paleidimo, kokybiškų individualių ir šabloninių dizaino svetainių kūrimas",
+      "Nuo idėjos iki paleidimo, kokybiškų individualių ir šabloninių dizaino svetainių kūrimas.",
   },
   {
     title: "Parduotuvių kūrimas",
@@ -19,7 +19,7 @@ const SERVICES = [
   {
     title: "Skaitmeninis meistriškumas",
     description:
-      "Siūlome platų paslaugų pasirinkimą: rinkodaros, grafinio dizaino ir 2D animacijos srityje,",
+      "Siūlome platų paslaugų pasirinkimą: rinkodaros, grafinio dizaino ir 2D animacijos srityje.",
   },
 ];
 export default function ServicesSummary() {
