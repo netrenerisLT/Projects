@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/header/Header.jsx";
 import LineSvg from "@/components/others/LineSvg.jsx";
 import Footer from "@/components/footer/Footer.jsx";
+import ProgressBar from "../components/others/ProgressBar";
 
 export const metadata = {
   title: "SilvaDev - Rooted inDigital",
@@ -16,11 +17,12 @@ export default function RootLayout({ children }) {
           <Header />
         </header>
         <div className="flex w-screen">
-          <div className="bg-colBlack w-3/12 z-10 relative">
-            <span className="md:hidden absolute top-10 left-[20%] h-[100%]">
+          <ProgressBar />
+          <div className="bg-colTransparent w-3/12 z-10 relative">
+            <span className="md:hidden absolute top-10 left-[20%] h-[99%]">
               <LineSvg />
             </span>
-            <span className="absolute top-10 left-[100%] h-[100%]">
+            <span className="absolute top-10 left-[100%] h-[99%]">
               <LineSvg />
             </span>
           </div>

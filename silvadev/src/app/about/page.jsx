@@ -1,7 +1,7 @@
-import React from "react";
-import H1Title from "@/components/H1Title";
-import H2Title from "@/components/H2Title";
 import ServicesFull from "@/components/about/services/ServicesFull";
+import Accordion from "@/components/about/accordion/Accordion";
+import H1Title from "@/components/others/H1Title";
+import H2Title from "@/components/others/H2Title";
 
 export default function page() {
   return (
@@ -16,6 +16,7 @@ export default function page() {
           profesionaliai atrodančią svetainę.
         </H2Title>
         <ServicesFull />
+        <Accordion />
       </div>
     </div>
   );

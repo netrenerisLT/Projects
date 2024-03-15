@@ -67,11 +67,11 @@ function ContactForm() {
 
   return (
     <div
-      className={`md:h-[31rem]  max-sm:bg-colWaterLeaf  h-[39rem] flex max-md:flex-col justify-center md:justify-end text-right max-md:items-end items-center border-y-[1px] border-colJetBlack pl-4 py-5 pr-4 md:p-12 xl:p-24 2xl:p-36  ${
+      className={`md:h-[31rem]  max-sm:bg-colWaterLeaf  max-sm:z-40 h-[39rem] flex max-md:flex-col justify-center md:justify-end text-right max-md:items-end items-center border-y-[1px] border-colJetBlack pl-4 py-5 pr-4 md:p-12 xl:p-24 2xl:p-36  ${
         showForm && "bg-colWaterLeaf"
       }`}
     >
-      <div className="max-md:hidden">
+      <div className="max-md:hidden" >
         {!showForm && (
           <h2 className="textH1 text-colWaterLeaf mb-5" onClick={() => setShowForm(!showForm)}>
             Parašyk <br /> mums

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Parralax from "@/components/others/ParralaxText";
 import ServicesSummary from "@/components/about/services/ServicesSummary";
-import H2Title from "@/components/H2Title";
-import H1Title from "@/components/H1Title";
+import H2Title from "@/components/others/H2Title";
+import H1Title from "@/components/others/H1Title";
 
 const Homepage = () => {
   return (

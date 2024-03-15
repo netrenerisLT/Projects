@@ -53,7 +53,7 @@ export default function MobileMenu() {
         <ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%]">
           <Links  offMobileMenu={handleClick} />
           <li>
-            <Link href="/">Susisiekti</Link>
+            <Link onClick={handleClick} href="#footer">Susisiekti</Link>
           </li>
         </ul>
         <div className="text-font15pt text-colWhite flex flex-col gap-4 px-[25%]">

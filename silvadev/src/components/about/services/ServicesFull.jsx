@@ -1,4 +1,4 @@
-import Button from "../../others/Button";
+import TextLeftZone from "../../others/TextLeftZone";
 
 const SERVICES = [
   {
@@ -24,15 +24,18 @@ const SERVICES = [
 ];
 export default function ServicesFull() {
   return (
-    <div className="relative">
-      <ul className="flex flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 justify-between">
+    <div className="relative mb-32">
+      <ul className="flex flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 justify-between relative">
+      <TextLeftZone styles="items-start px-4 -ml-[33%]">
+          Paslaugos
+        </TextLeftZone>
         {SERVICES.map((item) => (
           <li key={item.title} className="w-full lg:w-[46%] box-content">
             <div>
               <h3 className="textH3 mb-3 md:mb-4 lg:mb-5 max-w-[30%]">
                 {item.title}
               </h3>
-              <p className="textParagraph">{item.description}</p>
+              <p className="textParagraph max-sm:pr-4">{item.description}</p>
             </div>
           </li>
         ))}
