@@ -3,7 +3,7 @@ import { useState } from "react";
 import Links from "./Links";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import LineSvg from "../Others/LineSvg";
+import LineSvg from "../others/LineSvg";
 
 const variants = {
   open: {
