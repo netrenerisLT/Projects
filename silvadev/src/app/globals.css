@@ -33,6 +33,9 @@
   .paddingX {
     @apply px-4 md:px-8 2xl:px-14;
   }
+  .blockStyle {
+    @apply relative flex flex-col mt-40 py-5 max-sm:pl-1 md:p-4 md:pr-12 xl:pr-24 2xl:pr-36 w-full
+  }
 }
 
 @layer base {

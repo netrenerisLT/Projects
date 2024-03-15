@@ -15,7 +15,7 @@ export default function Button({
       <Link
         prefetch={prefetch}
         href={href}
-        className={`${styles} textParagraph capitalize flex items-center z-50 ${
+        className={`${styles} textParagraph capitalize flex items-center z-40 ${
           !reverse && "flex-row-reverse"
         }`}
       >

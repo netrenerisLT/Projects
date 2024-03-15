@@ -31,16 +31,17 @@ export default function Header() {
           {/* <Image>Logo</Image> */}
         </Link>
       </div>
-      <div className="flex w-9/12 flex-1 items-center justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4">
-        <p className="textParagraph">
-          Įkurta <br /> Vilniuje
+      <div className="flex w-9/12 flex-1 items-center justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4 ">
+        <p className="textParagraph z-50 ">
+          Rooted <br /> inDigital
         </p>
         <div className="max-md:hidden flex text-colWhite justify-between">
           <DesktopMenu />
         </div>
+        <div className="md:hidden">
+          <MobileMenu />
+        </div>
       </div>
-
-      {/* <MobileMenu /> */}
     </div>
   );
 }

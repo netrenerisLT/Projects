@@ -3,10 +3,12 @@ import { useState } from "react";
 import Links from "./Links";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import LineSvg from "../Others/LineSvg";
 
 const variants = {
   open: {
-    x: 0,
+    // x: 0,
+    clipPath: "circle(1200px at 90% 5%)",
     opacity: 1,
     transition: {
       type: "spring",
@@ -14,23 +16,15 @@ const variants = {
     },
   },
   closed: {
-    x: -500,
+    // x: 500,
     opacity: 1,
+    clipPath: "circle(0px at 90% 5%)",
     transition: {
       delay: 0.2,
       type: "spring",
       stiffness: 200,
-      damping: 40,
+      damping: 30,
     },
-  },
-};
-const navLinksMotion = {
-  y: [50, 0],
-  opacity: [0, 1],
-  transition: {
-    type: "spring",
-    stiffness: 250,
-    damping: 40,
   },
 };
 
@@ -41,29 +35,35 @@ export default function MobileMenu() {
   }
   return (
     <motion.div
-      className="absolute z-10"
+      className="absolute z-10 "
       animate={activeMobile ? "open" : "closed"}
     >
       <motion.div
         initial={false}
         variants={variants}
-        className="fixed flex flex-col items-start justify-between top-0 left-0 p-8 h-screen max-w-md w-full z-10 bg-colWaterLeaf"
+        className="fixed flex flex-col items-start justify-between top-0 left-0 p-8 h-screen max-w-md w-full z-0 bg-colWaterLeaf"
       >
+        <span className="absolute top-0 left-[5%] h-[100%]">
+          <LineSvg whiteLine />
+        </span>
+        <span className="absolute top-0 left-[25%] h-[100%]">
+          <LineSvg whiteLine />
+        </span>
         <hr />
-        <motion.ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%]">
-          <Links navLinksMotion={navLinksMotion} offMobileMenu={handleClick} />
+        <ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%]">
+          <Links  offMobileMenu={handleClick} />
           <li>
             <Link href="/">Susisiekti</Link>
           </li>
-        </motion.ul>
-        <motion.div className="text-font15pt text-colWhite flex flex-col gap-4 px-[25%]">
+        </ul>
+        <div className="text-font15pt text-colWhite flex flex-col gap-4 px-[25%]">
           <a href="mailto:hello@silvadev.com">hello@silvadev.com</a>
           <a href="tel:+37067859404">+37067859404</a>
-        </motion.div>
+        </div>
       </motion.div>
 
       <motion.button
-        className="flex w-16 h-16 flex-col justify-center fixed items-center top-2 left-2 z-50 m-2 "
+        className="flex w-16 h-16 flex-col justify-center fixed items-center top-2 right-2 z-50"
         onClick={() => setActiveMobile(!activeMobile)}
         whileHover={{
           transition: { duration: 1, type: "spring" },
