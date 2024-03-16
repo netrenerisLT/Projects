@@ -5,7 +5,7 @@ import H2Title from "@/components/others/H2Title";
 
 const HOWWEWORK = [
   {
-    title: "Poreikių išsiaiškinimas",
+    title: "Poreikių aptarimas",
     description:
       "Mūsų pirmieji pokalbiai yra skirti išsiaiškinti tavo projekto tikslus, reikalingą funkcionalmą ir kitus reikalavimus. Po to galime suplanuoti aiškų darbų planą, nustatyti realius terminus, biudžetą ir kt.",
   },
@@ -33,7 +33,7 @@ const HOWWEWORK = [
 
 export default function page() {
   return (
-      <div className="blockStyle pl-0">
+      <div className="blockStyle pl-0 ">
         <H1Title styles=" -ml-[30%] max-sm:pr-4 pl-4">Apie Mus</H1Title>
         <H2Title styles="max-sm:-ml-[28%] text-left normal-case max-sm:pr-4 pl-4">
           Mūsų ekspertų komanda daugiau nei 6 metus kuria naudotojui draugiškas

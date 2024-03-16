@@ -99,7 +99,7 @@ export default function page({ params }) {
               </div>
             </div>
           </div>
-          <div className="ml-[1px] mt-8 md:mt-14 lg:mt-28 flex flex-col w-full md:items-end max-sm:pb-2 pr-[1px] max-sm:pl-[5px]">
+          <div className="ml-[1px] mt-8 md:mt-14 lg:mt-28 flex flex-col w-full md:items-end  pr-[1px] max-sm:pl-[5px]">
             <H2Title styles="text-right w-3/4 max-sm:mr-4 max-sm:ml-12">
               {project.keyInfo}
             </H2Title>
