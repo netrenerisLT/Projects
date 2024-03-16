@@ -3,34 +3,6 @@ import { useState } from "react";
 import ArrowIcon from "@/components/others/ArrowIcon";
 import TextLeftZone from "@/components/others/TextLeftZone";
 
-const HOWWEWORK = [
-  {
-    title: "Poreikių išsiaiškinimas",
-    description:
-      "Mūsų pirmieji pokalbiai yra skirti išsiaiškinti tavo projekto tikslus, reikalingą funkcionalmą ir kitus reikalavimus. Po to galime suplanuoti aiškų darbų planą, nustatyti realius terminus, biudžetą ir kt.",
-  },
-  {
-    title: "UX/UI",
-    description:
-      "Esant poreikiui, pradedame nuo eskizų kūrimo, kuriuose pateikiama bendra svetainės išvaizda ir pojūtis. Atsižvelgdami į poreikius, kuriame vizualiai patrauklias ir intuityvias sąsajas, kurios sustiprins tavo prekės ženklo tapatybę, skatiną vartotojų įsitraukimą ir augimą.",
-  },
-  {
-    title: "Svetainės kūrimas",
-    description:
-      "Tavo idėja paverčiame realybe. Naudojame patikrintą kodavimo praktiką kuriant saugias sistemas. Kiekviena funkcija yra kruopščiai sukurta ir išbandyta, kad būtų užtikrinta svetainės kokybė.",
-  },
-  {
-    title: "Testavimas",
-    description:
-      "Testai užtikrina, kad svetatnė yra stabili, naši ir saugi. Mes paprastai naudojame tikrus įrenginius, o ne emuliatorius, kad surinktume ir analizuotume bandomųjų vartotojų patirtį.",
-  },
-  {
-    title: "Palaikymas ir priežiūra",
-    description:
-      "Svetainės neturi finišo linijos. Kai pateiksime sprendimą, vis dar būsime tavo žinioje dėl atnaujinimų ir suplanuotos priežiūros.",
-  },
-];
-
 const Item = ({ title, index, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -61,15 +33,17 @@ const Item = ({ title, index, children }) => {
   );
 };
 
-export default function Accordion() {
+export default function Accordion({ information, title }) {
   return (
     <>
-      <ul className="max-sm:-mb-[5.5rem] md:-mb-4 w-[screen - 5%] md:w-full md:-ml-4 max-sm:-ml-[28%] max-sm:z-40 bg-colBlack relative">
-        <TextLeftZone styles="h-28 items-center md:items-start px-4 max-sm:border-colJetBlack max-sm:border-t-[1px] md:-ml-[33%] ">
-          Kaip dirbame
-        </TextLeftZone>
+      <ul className="max-sm:-mb-[5.5rem] md:-mb-4 w-[100% - 5%] md:w-full max-sm:-ml-[28%] max-sm:z-40 bg-colBlack relative">
+        {title && (
+          <TextLeftZone styles="h-28 items-center md:items-start px-4 max-sm:border-colJetBlack max-sm:border-t-[1px] md:-ml-[33%] ">
+            {title}
+          </TextLeftZone>
+        )}
 
-        {HOWWEWORK.map((item, index) => (
+        {information.map((item, index) => (
           <Item key={item.title} index={index + 1} title={item.title}>
             {item.description}
           </Item>

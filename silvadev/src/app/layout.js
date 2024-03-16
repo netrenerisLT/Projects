@@ -26,7 +26,13 @@ export default function RootLayout({ children }) {
               <LineSvg />
             </span>
           </div>
-          <div className="w-9/12">
+          <div className="w-9/12 relative">
+            <span className="max-sm:hidden absolute top-0 right-[46px] xl:right-[94px] 2xl:right-[142px] h-[99%]">
+              <LineSvg />
+            </span>
+            <span className="max-sm:hidden absolute top-0 lg:right-[22%] xl:right-[24.5%] 2xl:right-[25%] h-[99%]">
+              <LineSvg />
+            </span>
             {children}
             <Footer />
           </div>

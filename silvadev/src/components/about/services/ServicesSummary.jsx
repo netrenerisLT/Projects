@@ -24,7 +24,7 @@ const SERVICES = [
 ];
 export default function ServicesSummary() {
   return (
-    <div className="grid">
+    <div className="grid pl-4">
       <div className="max-sm:relative max-sm:overflow-x-auto">
         <ul className="flex flex-wrap max-sm:w-[550px] max-sm:gap-10 md:gap-x-10 md:gap-y-16 md:justify-between max-sm:overflow-x-scroll max-sm:scroll-smooth">
           {SERVICES.map((item) => (

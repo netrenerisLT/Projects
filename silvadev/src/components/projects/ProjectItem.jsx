@@ -2,25 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../others/Button";
 
-export default function ProjectItem({
-  title,
-  slug,
-  coverImage,
-}) {
+export default function ProjectItem({ title, slug, coverImage, summary }) {
   return (
-    <article className="flex flex-col justify-end  h-full w-full relative">
-      <Image
-        className="aspect-video max-h-[85%] h-auto max-w-full object-cover object-center"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-        src={coverImage}
-        alt={title}
-        priority
-        fill
+    <article className="flex gap-y-4 flex-col h-fit w-full ">
+      <div className="h-full aspect-video relative w-full">
+        <Image
+          className="object-cover object-center"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          src={coverImage}
+          alt={title}
+          priority
+          fill
+        />
+      </div>
 
-      />
-      <div className="flex justify-between items-center">
-        <p className="textParagraph px-4">{title}</p>
-        <Button href={`/projects/${slug}`}>Daugiau</Button>
+      <div className={`flex justify-between items-start ${summary && "flex-col md:flex-row"}`}>
+        <div className="textParagraph px-4 md:basis-2/3">
+          <p>{title}</p>
+          {summary && <p className="pt-4 mb-4">{summary}</p>}
+        </div>
+        <span className="ml-4">
+          <Button href={`/projects/${slug}`}>Daugiau</Button>
+        </span>
       </div>
     </article>
   );

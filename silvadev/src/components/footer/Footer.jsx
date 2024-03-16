@@ -2,9 +2,9 @@ import ContactForm from "../ContactForm/ContactForm";
 
 function Footer() {
   return (
-    <footer className="max-sm:w-screen max-sm:-ml-[34%] max-sm:mt-16 textParagraph flex flex-col  bg-colBlack" id="footer">
+    <footer className="max-sm:w-screen max-sm:-ml-[34%] max-sm:mt-16 ml-[1px] textParagraph flex flex-col  md:bg-colBlack" id="footer">
       <ContactForm />
-      <div className="flex flex-col md:h-80 justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4 py-5 z-40">
+      <div className="flex flex-col md:h-80 justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4 py-5 z-40  md:bg-colBlack">
         <div className="flex flex-col-reverse lg:flex-row justify-start gap-4">
           <ul className="basis-6/12 pb-4">
             <li>Svetainių kūrimas</li>

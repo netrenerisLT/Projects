@@ -1,5 +1,4 @@
 import H1Title from "@/components/others/H1Title";
-import ImageSlider from "@/components/projects/ImageSlider";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import React, { Suspense } from "react";
 
@@ -30,8 +29,6 @@ const projects = [
         imageUrl: "/projects/dobis.jpg",
       },
     ],
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     keyInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
@@ -56,8 +53,6 @@ const projects = [
         imageUrl: "/projects/dobis.jpg",
       },
     ],
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     keyInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
@@ -82,8 +77,6 @@ const projects = [
         imageUrl: "/projects/dobis.jpg",
       },
     ],
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     keyInfo:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
   },
@@ -97,7 +90,7 @@ export default function page() {
         fallback={<p className="textParagraph">Kraunami projektai...</p>}
       >
         {/* <ProjectsFetch /> */}
-        <ProjectGrid projects={projects} />
+        <ProjectGrid projects={projects} styles="xl:w-[45%]" />
       </Suspense>
     </div>
   );
