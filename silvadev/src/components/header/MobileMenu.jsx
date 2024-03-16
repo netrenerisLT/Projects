@@ -41,7 +41,7 @@ export default function MobileHeader() {
       <motion.div
         initial={false}
         variants={variants}
-        className="fixed flex flex-col items-start justify-between top-0 left-0 px-8 pb-4 h-screen max-w-md w-full z-50 bg-colWaterLeaf "
+        className="fixed flex flex-col items-start justify-between top-0 left-0 px-8 pb-4 h-full max-w-md w-full z-50 bg-colWaterLeaf "
       >
         <span className="absolute top-0 left-[5%] h-[100%]">
           <LineSvg whiteLine />

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className="w-full h-full font-montserrat font-medium bg-colBlack ">
         <Header />
         <MobileHeader />
-        <div className="flex w-screen">
+        <div className="flex w-screen overflow-hidden">
           <ProgressBar />
           <div className="bg-colTransparent w-3/12 z-10 relative">
             <span className="md:hidden absolute top-10 left-[20%] h-[99%]">

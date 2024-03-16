@@ -78,7 +78,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Parralax() {
   return (
-    <section className="absolute w-full -bottom-8 xl:-bottom-4 max-sm:z-40 max-sm:w-screen max-sm:-ml-[25%] ">
+    <section className="absolute w-full -bottom-8 xl:-bottom-4 max-sm:z-40 max-sm:w-fit max-sm:-ml-[35%] ">
       <ParallaxText baseVelocity={-3}>Puslapių kūrimas</ParallaxText>
     </section>
   );
