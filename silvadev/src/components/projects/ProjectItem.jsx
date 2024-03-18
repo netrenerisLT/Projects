@@ -21,7 +21,7 @@ export default function ProjectItem({ title, slug, coverImage, summary, withSumm
           {withSummary && <p className="pt-4 mb-4">{summary}</p>}
         </div>
         <span className="ml-4">
-          <Button href={`/projects/${slug}`}>Daugiau</Button>
+          <Button prefetch={true} href={`/projects/${slug}`}>Daugiau</Button>
         </span>
       </div>
     </article>

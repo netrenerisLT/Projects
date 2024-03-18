@@ -19,7 +19,7 @@ export default function ImageSlider({ projectImages, coverImage, title = "" }) {
           fill
         />
       </div>
-      <div className="grid max-lg:grid-cols-5 gap-4 row-span-1 lg:row-span-5 col-span-5 lg:col-span-1">
+      <div className="grid max-lg:grid-cols-5 gap-4 row-span-1 lg:row-span-5 col-span-5 lg:col-span-1 content-between">
         {projectImages.map((image, index) => (
           <div key={index + image.title} className="relative aspect-video ">
             <Image
