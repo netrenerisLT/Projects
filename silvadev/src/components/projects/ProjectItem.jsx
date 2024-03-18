@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Button from "../others/Button";
 
 export default function ProjectItem({ title, slug, coverImage, summary }) {

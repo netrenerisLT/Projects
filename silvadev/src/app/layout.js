@@ -13,16 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-full h-full font-montserrat font-medium bg-colBlack ">
+      <body className="w-screen h-full font-montserrat font-medium bg-colBlack ">
         <Header />
         <MobileHeader />
-        <div className="flex w-screen overflow-hidden">
+        <div className="flex w-full overflow-hidden">
           <ProgressBar />
           <div className="bg-colTransparent w-3/12 z-10 relative">
-            <span className="md:hidden absolute top-10 left-[20%] h-[99%]">
+            <span className="md:hidden absolute top-0 left-[20%] h-[100%]">
               <LineSvg />
             </span>
-            <span className="absolute top-10 left-[100%] h-[99%]">
+            <span className="absolute top-0 left-[100%] h-[100%]">
               <LineSvg />
             </span>
           </div>

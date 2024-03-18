@@ -67,7 +67,7 @@ function ContactForm() {
 
   return (
     <div
-      className={`md:h-[31rem]  max-sm:bg-colWaterLeaf  md:bg-colBlack  z-20 h-[39rem] flex max-md:flex-col justify-center md:justify-end text-right max-md:items-end items-center border-y-[1px]  border-colJetBlack pl-4 py-5 pr-4 md:p-12 xl:p-24 2xl:p-36  ${
+      className={`md:h-[31rem]  max-sm:bg-colWaterLeaf  z-20 h-[39rem] flex max-md:flex-col justify-center md:justify-end text-right max-md:items-end items-center border-y-[1px]  border-colJetBlack pl-4 py-5 pr-4 md:p-12 xl:p-24 2xl:p-36  ${
         showForm && "bg-colWaterLeaf"
       }`}
     >

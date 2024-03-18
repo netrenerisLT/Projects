@@ -43,7 +43,7 @@ export default function page() {
           profesionaliai atrodančią svetainę.
         </H2Title>
         <ServicesFull />
-        <Accordion information={HOWWEWORK} title="Kaip dirbame" />
+        <Accordion information={HOWWEWORK} title="Darbo modelis" />
       </div>
   );
 }
