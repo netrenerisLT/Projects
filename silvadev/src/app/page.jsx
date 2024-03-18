@@ -5,63 +5,10 @@ import H2Title from "@/components/others/H2Title";
 import H1Title from "@/components/others/H1Title";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import Button from "@/components/others/Button";
-
-const projects = [
-  {
-    title: "Dobis ir Aurelija",
-    slug: "dobis-nuostabus",
-    projectUrl: "https:www.google.com",
-    projectType: "El. parduotuve",
-    clientName: "Dobiukas maziukas",
-    coverImage: "/projects/dobis.jpg",
-    projectImages: [
-      {
-        title: "Dobis",
-        imageUrl: "/projects/dobis.jpg",
-      },
-      {
-        title: "Dobis",
-        imageUrl: "/projects/dobis.jpg",
-      },
-      {
-        title: "Dobis",
-        imageUrl: "/projects/dobis.jpg",
-      },
-    ],
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    keyInfo:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
-  {
-    title: "Dobis 4ever",
-    slug: "dobis-4ever",
-    projectUrl: "https:www.google.com",
-    projectType: "El. parduotuve",
-    clientName: "Dobiukas dobiliukas",
-    coverImage: "/projects/dobis.jpg",
-    projectImages: [
-      {
-        title: "Dobis",
-        imageUrl: "/projects/dobis.jpg",
-      },
-      {
-        title: "Dobis",
-        imageUrl: "/projects/dobis.jpg",
-      },
-      {
-        title: "Dobis",
-        imageUrl: "/projects/dobis.jpg",
-      },
-    ],
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    keyInfo:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
-];
+import PROJECTS from "@/lib/projects.json";
 
 const Homepage = () => {
+  const featuredProjects = PROJECTS.filter((item) => item.isFeatured === true);
   return (
     <>
       <div className="h-screen flex flex-col justify-end relative">
@@ -86,11 +33,9 @@ const Homepage = () => {
         <H1Title styles="pl-4 max-sm:-ml-[30%] max-sm:pr-4">
           Atrinkti darbai
         </H1Title>
-        <ProjectGrid projects={projects} landingPage />
+        <ProjectGrid projects={featuredProjects} withSummary />
         <span className="text-right mt-32 mb-8">
-          <Button href="/projects">
-            Projektai
-          </Button>
+          <Button href="/projects">Projektai</Button>
         </span>
       </div>
     </>

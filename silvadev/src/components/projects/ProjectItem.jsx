@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "../others/Button";
 
-export default function ProjectItem({ title, slug, coverImage, summary }) {
+export default function ProjectItem({ title, slug, coverImage, summary, withSummary }) {
   return (
     <article className="flex gap-y-4 flex-col h-fit w-full ">
       <div className="h-full aspect-video relative w-full">
@@ -18,7 +18,7 @@ export default function ProjectItem({ title, slug, coverImage, summary }) {
       <div className={`flex justify-between items-start ${summary && "flex-col md:flex-row"}`}>
         <div className="textParagraph px-4 md:basis-2/3">
           <p>{title}</p>
-          {summary && <p className="pt-4 mb-4">{summary}</p>}
+          {withSummary && <p className="pt-4 mb-4">{summary}</p>}
         </div>
         <span className="ml-4">
           <Button href={`/projects/${slug}`}>Daugiau</Button>
