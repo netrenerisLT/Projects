@@ -10,6 +10,11 @@ export async function generateMetadata({ params, searchParams }) {
 
   return {
     title: `Projektai - ${project.title}`,
+    openGraph: {
+      images: [{
+        url: `${project.coverImage}`
+      }]
+    }
   };
 }
 

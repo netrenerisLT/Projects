@@ -7,6 +7,7 @@ import ProgressBar from "../components/others/ProgressBar";
 import MobileHeader from "@/components/header/MobileMenu";
 
 export const metadata = {
+  metadataBase: new URL('https://silvadev.com'),
   generator: "SilvaDev",
   applicationName: "SilvaDev",
   title: {
