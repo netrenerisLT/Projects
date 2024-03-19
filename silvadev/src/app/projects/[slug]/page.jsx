@@ -1,10 +1,17 @@
 import Accordion from "@/components/about/accordion/Accordion";
 import H1Title from "@/components/others/H1Title";
 import H2Title from "@/components/others/H2Title";
-import TextLeftZone from "@/components/others/TextLeftZone";
 import ImageSlider from "@/components/projects/ImageSlider";
 import React, { Suspense } from "react";
 import PROJECTS from "@/lib/projects.json";
+
+export async function generateMetadata({ params, searchParams }) {
+  const [project] = PROJECTS.filter((project) => project.slug === params.slug);
+
+  return {
+    title: `Projektai - ${project.title}`,
+  };
+}
 
 export default function page({ params }) {
   const [project] = PROJECTS.filter((project) => project.slug === params.slug);

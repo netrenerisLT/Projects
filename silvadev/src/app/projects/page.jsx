@@ -8,6 +8,9 @@ import PROJECTS from "@/lib/projects.json";
 //   return <ProjectGrid projects={projects} />;
 // }
 
+export const metadata = {
+  title: "Projektai",
+};
 
 export default function page() {
 

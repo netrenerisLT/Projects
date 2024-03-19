@@ -6,8 +6,33 @@ import ProgressBar from "../components/others/ProgressBar";
 import MobileHeader from "@/components/header/MobileMenu";
 
 export const metadata = {
-  title: "SilvaDev - Rooted inDigital",
-  description: "Let us guide you through the digital forest.",
+  generator: "SilvaDev",
+  applicationName: "SilvaDev",
+  title: {
+    template: "%s - SilvaDev",
+    default: "Svetainių ir el. parduotuvių kūrimas - SilvaDev",
+  },
+  description:
+    "Interneto svetainių kūrimas. Elektroninių parduotuvių kūrimas. Kuriame modernias, funkcionalias ir profesionalias svetaines. Programavimo ir SEO paslaugos.",
+  keywords: [
+    "Svetainių kūrimas",
+    "Puslapių kūrimas",
+    "El. parduotuvių kūrimas",
+    "Internetinė parduotuvė",
+    "Elektroninių parduotuvių kūrimas",
+    "Programavimo paslaugos",
+    "Interneto svetainių priežiūra",
+    "SEO optimizavimas",
+  ],
+  referrer: "origin-when-cross-origin",
+  authors: [
+    { name: "SilvaDev", url: "https://www.silvadev.com/" },
+    { name: "Aurelija Beitaitė", url: "https://www.aurelijabeitaite.com/" },
+  ],
+  creator: "SilvaDev",
+  icons: {
+    icon: "https://nextjs.org/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {

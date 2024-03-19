@@ -31,6 +31,10 @@ const HOWWEWORK = [
   },
 ];
 
+export const metadata = {
+  title: "Apie Mus",
+};
+
 export default function page() {
   return (
       <div className="blockStyle pl-0 ">
