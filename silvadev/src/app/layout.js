@@ -1,4 +1,5 @@
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/header/Header.jsx";
 import LineSvg from "@/components/others/LineSvg.jsx";
 import Footer from "@/components/footer/Footer.jsx";
@@ -30,8 +31,21 @@ export const metadata = {
     { name: "Aurelija Beitaitė", url: "https://www.aurelijabeitaite.com/" },
   ],
   creator: "SilvaDev",
-  icons: {
-    icon: "https://nextjs.org/favicon.ico",
+  openGraph: {
+    title: "Svetainių ir el. parduotuvių kūrimas - SilvaDev",
+    description:
+      "Interneto svetainių kūrimas. Elektroninių parduotuvių kūrimas. Kuriame modernias, funkcionalias ir profesionalias svetaines. Programavimo ir SEO paslaugos.",
+    url: "https://silvadev.com",
+    siteName: "SilvaDev",
+    images: [
+      {
+        url: "https://epsychology.app/wp-content/uploads/2021/12/EP_logo_en.webp", // Must be an absolute URL
+        width: 798,
+        height: 81,
+      },
+    ],
+    locale: "lt_LT",
+    type: "website",
   },
 };
 
@@ -59,6 +73,7 @@ export default function RootLayout({ children }) {
               <LineSvg />
             </span>
             {children}
+            <SpeedInsights />
             <Footer />
           </div>
         </div>
