@@ -4,7 +4,7 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import InputForm from "./InputFields";
 
-function ContactForm() {
+function ContactForm({ callToAction, errorName, errorEmail, successMessage }) {
   const [inputFields, setInputFields] = useState({
     name: "",
     email: "",
@@ -25,10 +25,10 @@ function ContactForm() {
   const validateValues = (inputValues) => {
     let errors = {};
     if (inputValues.name.trim() === "") {
-      errors.name = "*Įveskite vardą arba įmonę.";
+      errors.name = { errorName };
     }
     if (inputValues.email.trim() === "" || !inputValues.email.includes("@")) {
-      errors.email = "*Įveskite teisingą el. paštą.";
+      errors.email = { errorEmail };
     }
     return errors;
   };
@@ -72,18 +72,16 @@ function ContactForm() {
       <div className="max-md:hidden">
         {!showForm && (
           <h2
-            className="textH1 text-colBlack md:text-colWaterLeaf mb-5 cursor-pointer	"
+            className="textH1 text-colBlack md:text-colWaterLeaf mb-5 cursor-pointer "
             onClick={() => setShowForm(true)}
           >
-            Parašyk <br /> mums
+            {callToAction}
           </h2>
         )}
       </div>
-      <div className="md:hidden ">
+      <div className="md:hidden max-w-xs">
         {!successSubmit && (
-          <h2 className="textH1 mb-10 text-colBlack ">
-            Parašyk <br /> mums
-          </h2>
+          <h2 className="textH1 mb-10 text-colBlack">{callToAction}</h2>
         )}
       </div>
 
@@ -111,7 +109,7 @@ function ContactForm() {
             height={72}
             width={115}
           />
-          <p>Žinutė sėkmingai išsiųsta!</p>
+          <p>{successMessage}</p>
         </div>
       )}
     </div>

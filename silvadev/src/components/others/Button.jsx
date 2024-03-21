@@ -4,13 +4,15 @@ import Link from "next/link";
 import ArrowIcon from "@/components/others/ArrowIcon";
 
 export default function Button({
-  onClick,
   children,
   styles,
   reverse,
   prefetch,
   href = "",
 }) {
+
+  console.log(children)
+
   return (
     <button>
       <Link

@@ -8,6 +8,7 @@ import Button from "@/components/others/Button";
 import PROJECTS from "@/lib/projects.json";
 import { useTranslations } from "next-intl";
 
+
 const Homepage = () => {
   const t = useTranslations("indexPage");
 
@@ -24,21 +25,19 @@ const Homepage = () => {
         <Parralax />
       </div>
       <div className="blockStyle">
-        <H1Title styles=" pl-4 -ml-[32%] max-sm:pr-4">{t("services")}</H1Title>
+        <H1Title styles=" pl-4 -ml-[32%] max-sm:pr-4">{t("title")}</H1Title>
         <H2Title styles=" pl-4 max-sm:-ml-[28%] text-left normal-case max-sm:pr-4">
-          Su daugiau nei 6 metų patirtimi mūsų komanda kuria ne tik vizualiai
-          patrauklias, bet ir verslą auginančias interneto svetaines.
-          Susisiekime ir aptarsime tavo svetainės vizijos įgyvendinimą!
+          {t("subTitle")}
         </H2Title>
         <ServicesSummary />
       </div>
       <div className="blockStyle">
         <H1Title styles="pl-4 max-sm:-ml-[30%] max-sm:pr-4">
-          Atrinkti darbai
+          {t("selectedWork")}
         </H1Title>
         <ProjectGrid projects={featuredProjects} withSummary />
         <span className="text-right mt-32 mb-8">
-          <Button href="/projects">Projektai</Button>
+          <Button href="/projects">{t("projects")}</Button>
         </span>
       </div>
     </>

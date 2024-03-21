@@ -1,6 +1,14 @@
 {
   "indexPage": {
-    "services": "Services"
+    "title": "Services",
+    "subTitle": "Su daugiau nei 6 metų patirtimi mūsų komanda kuria ne tik vizualiai patrauklias, bet ir verslą auginančias interneto svetaines. Susisiekime ir aptarsime tavo svetainės vizijos įgyvendinimą!",
+    "selectedWork": "Selected Work",
+    "projects": "Projects"
+  },
+  "errorPages": {
+    "errorTitle": "There was an error",
+    "notfoundTitle": "Page not found",
+    "buttonAction": "Go to homepage"
   },
   "aboutPage": {
     "title": "About Us",
@@ -29,8 +37,52 @@
           "description": "Websites do not have a finish line. Once we deliver the solution, we will still be at your disposal for updates and scheduled maintenance."
         }
       }
+    },
+    "fullServices": {
+      "title": "Services",
+      "steps": {
+        "webDevelopment": {
+          "title": "Website Development",
+          "description": "Šiandien visi yra „internete“, todėl nenorime kad susidurtumėte su apribojimais pasiekti tikslinę auditoriją. Kuriame svetaines atitinkančias tavo poreikius – nuo individualių / šabloninių svetainių iki internetinių parduotuvių ar jų integracijos su įvairiomis sistemomis ir įrankiais."
+        },
+        "storeCreation": {
+          "title": "ESHOP development",
+          "description": "Padidinkite pardavimus, prekės ženklo žinomumą ir auditorijos pasiekiamumą, naudodami efektyvius el. prekybos sprendimus. Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo – kuriame platformas, skatinančias pardavimus, užtikrinančias saugumą, gera vartotojų patirtį ir jų įsitraukimą."
+        },
+        "siteMaintenance": {
+          "title": "Svetainių priežiūra",
+          "description": "Užtikrinkite savo svetainės saugumą, patikimumą ir našumą. Nuo reguliarių atnaujinimų ir saugos pataisų iki turinio valdymo ir našumo optimizavimo. Susikoncentruokite į savo projektą, o mes pasirūpinsime svetainės priežiūra."
+        },
+        "digitalExpertise": {
+          "title": "Skaitmeninis meistriškumas",
+          "description": "Patobulinkite savo projekto strategiją naudodami platų paslaugų spektrą. Su mūsų patikimais SEO ir socialinės rinkodaros, bei grafinio dizaino ir 2D animacijos (angl. motion) partneriais, siūlome platų paslaugų pasirinkimą, kad padidinti tavo projekto žinomumą ir auditorijos įsitraukimą."
+        }
+      }
+    },
+    "limitedServices": {
+      "scrollAction": "Scroll to left",
+
+      "steps": {
+        "webDevelopment": {
+          "title": "Svetainių kūrimas",
+          "description": "Šiandien visi yra „internete“, todėl nenorime kad susidurtumėte su apribojimais pasiekti tikslinę auditoriją. Kuriame svetaines atitinkančias tavo poreikius – nuo individualių / šabloninių svetainių iki internetinių parduotuvių ar jų integracijos su įvairiomis sistemomis ir įrankiais."
+        },
+        "storeCreation": {
+          "title": "Parduotuvių kūrimas",
+          "description": "Padidinkite pardavimus, prekės ženklo žinomumą ir auditorijos pasiekiamumą, naudodami efektyvius el. prekybos sprendimus. Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo – kuriame platformas, skatinančias pardavimus, užtikrinančias saugumą, gera vartotojų patirtį ir jų įsitraukimą."
+        },
+        "siteMaintenance": {
+          "title": "Svetainių priežiūra",
+          "description": "Užtikrinkite savo svetainės saugumą, patikimumą ir našumą. Nuo reguliarių atnaujinimų ir saugos pataisų iki turinio valdymo ir našumo optimizavimo. Susikoncentruokite į savo projektą, o mes pasirūpinsime svetainės priežiūra."
+        },
+        "digitalExpertise": {
+          "title": "Skaitmeninis meistriškumas",
+          "description": "Patobulinkite savo projekto strategiją naudodami platų paslaugų spektrą. Su mūsų patikimais SEO ir socialinės rinkodaros, bei grafinio dizaino ir 2D animacijos (angl. motion) partneriais, siūlome platų paslaugų pasirinkimą, kad padidinti tavo projekto žinomumą ir auditorijos įsitraukimą."
+        }
+      }
     }
   },
+
   "projectGridPage": {
     "loadingMessage": "Loading projects...",
     "title": "Projects"
@@ -38,7 +90,15 @@
   "selectedProjectPage": {
     "loadingMessage": "Loading project...",
     "projectLink": "Project Link",
-    "direction": "Direction",
+    "direction": "Type",
     "client": "Client"
+  },
+  "footerPage": {
+    "developedBy": "Developed by",
+    "designedBy": "Designed by",
+    "successMessage": "Your message sent succesfully!",
+    "callToAction": "Contact Us",
+    "errorName": "*Enter your name or company.",
+    "errorEmail": "*Enter correct email address."
   }
 }

@@ -1,28 +1,27 @@
 import Button from "../../others/Button";
+import { useTranslations } from "next-intl";
 
-const SERVICES = [
-  {
-    title: `Svetainių kūrimas`,
-    description:
-      "Nuo idėjos iki paleidimo, kokybiškų individualių ir šabloninių dizaino svetainių kūrimas.",
-  },
-  {
-    title: "Parduotuvių kūrimas",
-    description:
-      "Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo.",
-  },
-  {
-    title: "Svetainių priežiūra",
-    description:
-      "Reguliarūs atnaujinimai, našumo optimizavimas, turinio valdymas, saugos pataisų patikra ir kt.",
-  },
-  {
-    title: "Skaitmeninis meistriškumas",
-    description:
-      "Siūlome platų paslaugų pasirinkimą: rinkodaros, grafinio dizaino ir 2D animacijos srityje.",
-  },
-];
 export default function ServicesSummary() {
+  const t = useTranslations("aboutPage");
+
+  const SERVICES = [
+    {
+      title: t("limitedServices.steps.webDevelopment.title"),
+      description: t("limitedServices.steps.webDevelopment.description"),
+    },
+    {
+      title: t("limitedServices.steps.storeCreation.title"),
+      description: t("limitedServices.steps.storeCreation.description"),
+    },
+    {
+      title: t("limitedServices.steps.siteMaintenance.title"),
+      description: t("limitedServices.steps.siteMaintenance.description"),
+    },
+    {
+      title: t("limitedServices.steps.digitalExpertise.title"),
+      description: t("limitedServices.steps.digitalExpertise.description"),
+    },
+  ];
   return (
     <div className="grid pl-4">
       <div className="max-sm:relative max-sm:overflow-x-auto">
@@ -46,7 +45,7 @@ export default function ServicesSummary() {
         styles="md:hidden absolute -left-[2.6rem] -bottom-12 pointer-events-none"
         reverse
       >
-        Slinkite į kairę
+        {t("limitedServices.scrollAction")}
       </Button>
     </div>
   );
