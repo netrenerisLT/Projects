@@ -8,6 +8,12 @@ function Footer() {
     errorName: t("footerPage.errorName"),
     errorEmail: t("footerPage.errorEmail"),
     successMessage: t("footerPage.successMessage"),
+    errorMessage: t("footerPage.errorMessage"),
+    sendAction: t("footerPage.sendAction"),
+    inputName: t("footerPage.inputName"),
+    inputEmail: t("footerPage.inputEmail"),
+    inputPhone: t("footerPage.inputPhone"),
+    inputMessage: t("footerPage.inputMessage"),
   };
 
   return (

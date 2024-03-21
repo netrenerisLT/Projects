@@ -4,7 +4,18 @@ import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import InputForm from "./InputFields";
 
-function ContactForm({ callToAction, errorName, errorEmail, successMessage }) {
+function ContactForm({
+  callToAction,
+  errorName,
+  errorEmail,
+  successMessage,
+  inputName,
+  inputEmail,
+  inputPhone,
+  inputMessage,
+  errorMessage,
+  sendAction,
+}) {
   const [inputFields, setInputFields] = useState({
     name: "",
     email: "",
@@ -62,6 +73,8 @@ function ContactForm({ callToAction, errorName, errorEmail, successMessage }) {
         );
     }
   }, [errors]);
+  const stylesFormInput =
+    "w-full py-3 px-4 ring-1 ring-inset ring-colBlack focus:ring-colWhite bg-colTransparent placeholder-colBlack outline-none h-full ";
 
   return (
     <div
@@ -69,19 +82,21 @@ function ContactForm({ callToAction, errorName, errorEmail, successMessage }) {
         showForm ? "bg-colWaterLeaf" : "bg-colBlack"
       }`}
     >
-      <div className="max-md:hidden">
+      <div className="max-md:hidden ">
         {!showForm && (
           <h2
-            className="textH1 text-colBlack md:text-colWaterLeaf mb-5 cursor-pointer "
+            className="textH1 text-colBlack md:text-colWaterLeaf mb-5 cursor-pointer whitespace-pre-line "
             onClick={() => setShowForm(true)}
           >
             {callToAction}
           </h2>
         )}
       </div>
-      <div className="md:hidden max-w-xs">
+      <div className="md:hidden">
         {!successSubmit && (
-          <h2 className="textH1 mb-10 text-colBlack">{callToAction}</h2>
+          <h2 className="textH1 mb-10 text-colBlack  whitespace-pre-line">
+            {callToAction}
+          </h2>
         )}
       </div>
 
@@ -93,11 +108,63 @@ function ContactForm({ callToAction, errorName, errorEmail, successMessage }) {
             showForm ? "visible" : "md:hidden"
           }`}
         >
-          <InputForm
+          {/* <InputForm
             handleChange={handleChange}
             errors={errors}
             unSuccessSubmit={unSuccessSubmit}
-          />
+          /> */}
+          <div className=" flex flex-col gap-4 md:flex-row">
+            <div className="flex flex-col gap-4 w-full md:basis-5/12 max-h-44 flex-none">
+              <input
+                type="text"
+                placeholder={inputName}
+                className={stylesFormInput}
+                name="name"
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                placeholder={inputEmail}
+                className={stylesFormInput}
+                name="email"
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                placeholder={inputPhone}
+                className={stylesFormInput}
+                name="phone"
+              />
+            </div>
+            <div className="basis-7/12 max-h-44">
+              <textarea
+                placeholder={inputMessage}
+                rows="6"
+                className={stylesFormInput}
+                name="message"
+              ></textarea>
+            </div>
+          </div>
+
+          <div className="flex justify-between items-center flex-1 right-0 pl-4 mt-2">
+            {errors.name ? (
+              <span className="text-colRed">{errors.name}</span>
+            ) : (
+              <span className="text-colRed">{errors.email}</span>
+            )}
+            {unSuccessSubmit && (
+              <span className="text-colRed">{errorMessage}</span>
+            )}
+            <button className="flex items-center gap-4 group-invalid:pointer-events-none group-invalid:opacity-30">
+              <p> {sendAction}</p>
+              <Image
+                src="/blackArrow.svg"
+                alt="Arrow icon"
+                height={20}
+                width={30}
+              />
+            </button>
+          </div>
         </form>
       )}
 

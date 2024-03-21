@@ -82,7 +82,6 @@
       }
     }
   },
-
   "projectGridPage": {
     "loadingMessage": "Loading projects...",
     "title": "Projects"
@@ -97,8 +96,14 @@
     "developedBy": "Developed by",
     "designedBy": "Designed by",
     "successMessage": "Your message sent succesfully!",
-    "callToAction": "Contact Us",
+    "errorMessage": "There was an error, please try later.",
+    "sendAction": "Send",
+    "callToAction": "Contact\nUs",
     "errorName": "*Enter your name or company.",
-    "errorEmail": "*Enter correct email address."
+    "errorEmail": "*Enter correct email address.",
+    "inputName": "Name / Company*",
+    "inputEmail": "Email Address*",
+    "inputPhone": "Phone Number",
+    "inputMessage": "Message"
   }
 }

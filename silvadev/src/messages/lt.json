@@ -95,8 +95,14 @@
     "developedBy": "Sprendimas",
     "designedBy": "Dizainas",
     "successMessage": "Žinutė sėkmingai išsiųsta!",
-    "callToAction": "Parašyk mums",
+    "errorMessage": "Žinutė neišsiųsta, pabandykite vėliau!",
+    "sendAction": "Siųsti",
+    "callToAction": "Parašyk\nmums",
     "errorName": "*Įveskite vardą arba įmonę.",
-    "errorEmail": "*Įveskite teisingą el. paštą."
+    "errorEmail": "*Įveskite teisingą el. paštą.",
+    "inputName": "Vardas / Įmonė*",
+    "inputEmail": "El. Paštas*",
+    "inputPhone": "Telefono Numeris",
+    "inputMessage": "Žinutė"
   }
 }

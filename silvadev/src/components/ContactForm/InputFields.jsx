@@ -1,37 +1,41 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+export default function InputForm({ handleChange, errors, unSuccessSubmit }) {
+  const t = useTranslations();
 
-export default function InputForm({handleChange, errors, unSuccessSubmit}) {
   const stylesFormInput =
     "w-full py-3 px-4 ring-1 ring-inset ring-colBlack focus:ring-colWhite bg-colTransparent placeholder-colBlack outline-none h-full ";
-  return (
+  
+  
+    return (
     <>
       <div className=" flex flex-col gap-4 md:flex-row">
         <div className="flex flex-col gap-4 w-full md:basis-5/12 max-h-44 flex-none">
           <input
             type="text"
-            placeholder="Vardas / Įmonė*"
+            placeholder={t("footerPage.inputName")}
             className={stylesFormInput}
             name="name"
             onChange={handleChange}
           />
           <input
             type="text"
-            placeholder="El. Paštas*"
+            placeholder={t("footerPage.inputEmail")}
             className={stylesFormInput}
             name="email"
             onChange={handleChange}
           />
           <input
             type="text"
-            placeholder="Telefono Numeris"
+            placeholder={t("footerPage.inputPhone")}
             className={stylesFormInput}
             name="phone"
           />
         </div>
         <div className="basis-7/12 max-h-44">
           <textarea
-            placeholder="Žinutė"
+            placeholder={t("footerPage.inputMessage")}
             rows="6"
             className={stylesFormInput}
             name="message"
@@ -46,12 +50,10 @@ export default function InputForm({handleChange, errors, unSuccessSubmit}) {
           <span className="text-colRed">{errors.email}</span>
         )}
         {unSuccessSubmit && (
-          <span className="text-colRed">
-            Žinutė neišsiųsta, pabandykite vėliau!
-          </span>
+          <span className="text-colRed">{t("footerPage.inputMessage")}</span>
         )}
         <button className="flex items-center gap-4 group-invalid:pointer-events-none group-invalid:opacity-30">
-          <p>Siųsti</p>
+          <p> {t("footerPage.sendAction")}</p>
           <Image
             src="/blackArrow.svg"
             alt="Arrow icon"
