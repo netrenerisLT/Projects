@@ -4,6 +4,8 @@ import H2Title from "@/components/others/H2Title";
 import ImageSlider from "@/components/projects/ImageSlider";
 import React, { Suspense } from "react";
 import PROJECTS from "@/lib/projects.json";
+import { useTranslations } from "next-intl";
+
 
 export async function generateMetadata({ params, searchParams }) {
   const [project] = PROJECTS.filter((project) => project.slug === params.slug);
@@ -19,12 +21,14 @@ export async function generateMetadata({ params, searchParams }) {
 }
 
 export default function page({ params }) {
+  const t = useTranslations("selectedProjectPage");
+
   const [project] = PROJECTS.filter((project) => project.slug === params.slug);
 
   return (
     <div className="blockStyle pl-0 z-30">
       <Suspense
-        fallback={<p className="textParagraph">Kraunamas projektas...</p>}
+        fallback={<p className="textParagraph">{t("loadingMessage")}</p>}
       >
         <div className="w-full ">
           <H1Title styles=" -ml-[28%] max-sm:pr-4 md:mb-12">
@@ -40,15 +44,15 @@ export default function page({ params }) {
                 href={`${project.projectUrl}`}
                 target="_blank"
               >
-                Projekto Nuoroda
+                {t("projectLink")}
               </a>
             </div>
             <div className="flex flex-col justify-between items-start w-full">
               <ImageSlider {...project} />
               <div className="textParagraph flex gap-16 mt-4 max-sm:-ml-[26%]">
                 <span className="flex flex-col gap-2">
-                  <h4>Kryptis</h4>
-                  <h4>Klientas</h4>
+                  <h4>{t("direction")}</h4>
+                  <h4>{t("client")}</h4>
                 </span>
                 <span className="flex flex-col w-fit gap-2">
                   <p>{project.projectType}</p>

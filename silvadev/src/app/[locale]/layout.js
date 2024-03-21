@@ -3,11 +3,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/header/Header.jsx";
 import LineSvg from "@/components/others/LineSvg.jsx";
 import Footer from "@/components/footer/Footer.jsx";
-import ProgressBar from "../components/others/ProgressBar";
+import ProgressBar from "../../components/others/ProgressBar";
 import MobileHeader from "@/components/header/MobileMenu";
 
 export const metadata = {
-  metadataBase: new URL('https://silvadev.com'),
+  metadataBase: new URL("https://silvadev.com"),
   generator: "SilvaDev",
   applicationName: "SilvaDev",
   title: {
@@ -50,9 +50,9 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { locale } }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className="w-screen h-full font-montserrat font-medium bg-colBlack ">
         <Header />
         <MobileHeader />

@@ -1,0 +1,44 @@
+{
+  "indexPage": {
+    "services": "Services"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "description": "Our team of experts has been creating user-friendly websites for more than 6 years, which are not only visually appealing and engaging but also leave a lasting impression. From idea to launch – we are here to realize your project vision and create a high-quality and professional-looking website.",
+    "howWeWork": {
+      "title": "How We Work",
+      "steps": {
+        "needsDiscussion": {
+          "title": "Needs Discussion",
+          "description": "Our initial conversations are aimed at clarifying your project goals, required functionality, and other requirements. After that, we can plan a clear work schedule, set realistic deadlines, budget, etc."
+        },
+        "uxUi": {
+          "title": "UX/UI",
+          "description": "If needed, we start with sketching, which presents the general appearance and feel of the website. Taking into account the needs, we create visually attractive and intuitive interfaces that will strengthen your brand identity, encourage user engagement, and growth."
+        },
+        "websiteDevelopment": {
+          "title": "Website Development",
+          "description": "We turn your idea into reality. We use proven coding practices to create secure systems. Each feature is meticulously developed and tested to ensure website quality."
+        },
+        "testing": {
+          "title": "Testing",
+          "description": "Tests ensure that the website is stable, efficient, and secure. We usually use real devices, not emulators, to collect and analyze the test users' experience."
+        },
+        "supportAndMaintenance": {
+          "title": "Support and Maintenance",
+          "description": "Websites do not have a finish line. Once we deliver the solution, we will still be at your disposal for updates and scheduled maintenance."
+        }
+      }
+    }
+  },
+  "projectGridPage": {
+    "loadingMessage": "Loading projects...",
+    "title": "Projects"
+  },
+  "selectedProjectPage": {
+    "loadingMessage": "Loading project...",
+    "projectLink": "Project Link",
+    "direction": "Direction",
+    "client": "Client"
+  }
+}

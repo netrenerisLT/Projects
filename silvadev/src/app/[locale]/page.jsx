@@ -6,8 +6,11 @@ import H1Title from "@/components/others/H1Title";
 import ProjectGrid from "@/components/projects/ProjectGrid";
 import Button from "@/components/others/Button";
 import PROJECTS from "@/lib/projects.json";
+import { useTranslations } from "next-intl";
 
 const Homepage = () => {
+  const t = useTranslations("indexPage");
+
   const featuredProjects = PROJECTS.filter((item) => item.isFeatured === true);
   return (
     <>
@@ -21,7 +24,7 @@ const Homepage = () => {
         <Parralax />
       </div>
       <div className="blockStyle">
-        <H1Title styles=" pl-4 -ml-[32%] max-sm:pr-4">Paslaugos</H1Title>
+        <H1Title styles=" pl-4 -ml-[32%] max-sm:pr-4">{t("services")}</H1Title>
         <H2Title styles=" pl-4 max-sm:-ml-[28%] text-left normal-case max-sm:pr-4">
           Su daugiau nei 6 metų patirtimi mūsų komanda kuria ne tik vizualiai
           patrauklias, bet ir verslą auginančias interneto svetaines.
