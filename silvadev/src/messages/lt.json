@@ -3,7 +3,12 @@
     "title": "Paslaugos",
     "subTitle": "Su daugiau nei 6 metų patirtimi mūsų komanda kuria ne tik vizualiai patrauklias, bet ir verslą auginančias interneto svetaines. Susisiekime ir aptarsime tavo svetainės vizijos įgyvendinimą!",
     "selectedWork": "Atrinkti darbai",
-    "projects": "Projektai"
+    "projects": "Projektai",
+    "parralax": "Svetainių kūrimas"
+  },
+  "localeSwitcher": {
+    "label": "Pakeisti kalbą",
+    "locale": "{locale, select, lt {LT} en {EN} other {Unknown}}"
   },
   "errorPages": {
     "errorTitle": "Įvyko klaida.",

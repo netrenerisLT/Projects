@@ -42,5 +42,6 @@
   html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scroll-snap-type: y mandatory;
+    
   }
 }

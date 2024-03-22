@@ -22,7 +22,7 @@ const Homepage = () => {
           fill
           className="object-contain"
         />
-        <Parralax />
+        <Parralax title={t("parralax")} />
       </div>
       <div className="blockStyle">
         <H1Title styles=" pl-4 -ml-[32%] max-sm:pr-4">{t("title")}</H1Title>

@@ -2,7 +2,6 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
-import InputForm from "./InputFields";
 
 function ContactForm({
   callToAction,
@@ -36,10 +35,10 @@ function ContactForm({
   const validateValues = (inputValues) => {
     let errors = {};
     if (inputValues.name.trim() === "") {
-      errors.name = { errorName };
+      errors.name = errorName;
     }
     if (inputValues.email.trim() === "" || !inputValues.email.includes("@")) {
-      errors.email = { errorEmail };
+      errors.email = errorEmail;
     }
     return errors;
   };

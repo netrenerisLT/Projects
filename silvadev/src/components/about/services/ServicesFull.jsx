@@ -22,7 +22,7 @@ export default function ServicesFull() {
       description: t("fullServices.steps.digitalExpertise.description"),
     },
   ];
-  
+
   return (
     <div className="relative mb-32 pl-4">
       <ul className="flex flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 justify-between relative">

@@ -11,8 +11,6 @@ export default function Button({
   href = "",
 }) {
 
-  console.log(children)
-
   return (
     <button>
       <Link
