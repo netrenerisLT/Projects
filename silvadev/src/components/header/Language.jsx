@@ -15,9 +15,6 @@ export default function LocaleSwitcher() {
         >
           {t("locale", { locale: cur })}
         </option>
-        //   <span key={cur} value={cur} className="block py-2 w-full hover:text-colWaterLeaf last:border-t-[1px] last:border-colBlack">
-        //     {t("locale", { locale: cur })}
-        //   </span>
       ))}
     </LocaleSwitcherSelect>
   );

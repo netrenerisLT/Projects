@@ -17,7 +17,7 @@ const Homepage = () => {
     <>
       <div className="h-screen flex flex-col justify-end relative">
         <Image
-          src="/hero.png"
+          src="/hero.svg"
           alt="Hero Image"
           fill
           className="object-contain"

@@ -26,16 +26,6 @@ export default function LocaleSwitcherSelect({
     });
   }
   return (
-    // <label>
-    //   <select
-    //     className=" "
-    //     defaultValue={defaultValue}
-    //     disabled={isPending}
-    //     onChange={onSelectChange}
-    //   >
-    //     {children}
-    //   </select>
-    // </label>
 
     <label className="flex flex-col w-20 mx-auto relative capitalize ">
       <button

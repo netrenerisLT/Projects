@@ -15,10 +15,10 @@ export default function Header() {
         <div className="flex w-9/12 flex-1 items-center justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4">
           <p className="textParagraph z-50 ">
             Rooted <br /> inDigital
-          <LocaleSwitcher/>
           </p>
           <div className="max-md:hidden flex text-colWhite justify-between relative">
             <DesktopMenu />
+          <LocaleSwitcher/>
           </div>
         </div>
       </div>

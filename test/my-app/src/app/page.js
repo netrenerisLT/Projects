@@ -22,12 +22,13 @@ export default function Home() {
   // })();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-black relative">
-      <div className="w-96 h-96 relative opacity-50	">
-        
-        <Image src="/beburbulu.png" fill />
+    <main className="flex min-h-screen  flex-col w-screen h-screen relative	 items-center justify-between ">
+      <div className="">
+        <Image src="/hero2.png" fill style={{objectFit: "cover"}}	/>
       </div>
+      <div className="mix-blend-difference">
       <ParticlesContainer></ParticlesContainer>
+      </div>
     </main>
   );
 }
