@@ -19,7 +19,7 @@ export default function Header() {
       <header className="h-20 fixed w-full z-50 mix-blend-difference max-md:mt-2 text-colWhite md:pr-20 md:pl-6 ">
         <div className="h-full flex items-center justify-between ">
           <div className="flex w-3/12 h-full relative items-left justify-end md:justify-center">
-            <Link href="/" className="relative w-4/5 h-auto">
+            <Link href="/" className="relative w-4/5 h-20">
               <Image
                 className="max-md:hidden"
                 src="SilvaDev-Hor-White.svg"

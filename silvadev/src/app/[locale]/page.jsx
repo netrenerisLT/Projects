@@ -24,7 +24,7 @@ const Homepage = () => {
           // src="/Silva-Hero-Trees.png"
           alt="Hero Image"
           fill
-          className="object-cover object-left z-0"
+          className="object-cover object-left z-10 -ml-[3px] w-auto"
         />
         <Parralax title={t("parralax")} />
       </div>

@@ -78,8 +78,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function Parralax({ title }) {
   return (
-    <section className="absolute w-full -bottom-12 xl:-bottom-16 max-sm:z-40 max-sm:w-fit max-sm:-ml-[35%] ">
-      <ParallaxText baseVelocity={-3}>{title}</ParallaxText>
+    <section className="absolute w-full -bottom-12 xl:-bottom-16 max-sm:z-40 z-10 mix-blend-difference  max-sm:w-fit max-sm:-ml-[35%] ">
+      <ParallaxText baseVelocity={-2}>{title}</ParallaxText>
     </section>
   );
 }

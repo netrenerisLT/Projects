@@ -26,7 +26,7 @@ export default function ProjectItem({
 
       <div
         className={`flex justify-between items-start ${
-          summary && "flex-col md:flex-row"
+          withSummary && "flex-col md:flex-row"
         }`}
       >
         <div className="textParagraph px-4 md:basis-2/3">

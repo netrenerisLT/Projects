@@ -7,7 +7,7 @@ const Item = ({ title, index, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <li className="border-y-[1px] border-colJetBlack pl-6 pr-14">
+    <li className="border-y-[1px] border-colJetBlack md:pl-6 md:pr-14">
       <button
         type="button"
         className="flex items-center text-left justify-between w-full px-4  h-28 focus:outline-none"

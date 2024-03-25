@@ -32,7 +32,7 @@ const config = {
     detectsOn: "window",
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       onDiv: {
@@ -225,12 +225,7 @@ const config = {
       direction: "none",
       drift: 0,
       enable: true,
-      gravity: {
-        acceleration: 9.81,
-        enable: false,
-        inverse: false,
-        maxSpeed: 50,
-      },
+      
       path: {
         clamp: true,
         delay: {
@@ -248,31 +243,19 @@ const config = {
       },
       random: false,
       size: false,
-      speed: 2,
-      spin: {
-        acceleration: 0,
-        enable: false,
-      },
-      straight: false,
-      trail: {
-        enable: false,
-        length: 10,
-        fill: {},
-      },
-      vibrate: false,
-      warp: false,
+      speed: 1,
     },
     number: {
       density: {
-        enable: false,
-        width: 1920,
-        height: 1080,
+        enable: true,
+        width: 1000,
+        height: 1000,
       },
       limit: {
         mode: "delete",
         value: 0,
       },
-      value: 60,
+      value: 40,
     },
     opacity: {
       // ------------------------------------------------------------------------------------------------------------------------------------------
@@ -299,7 +282,7 @@ const config = {
     size: {
       value: {
         min: 1,
-        max: 30,
+        max: 40,
       },
       animation: {
         count: 0,
@@ -373,19 +356,14 @@ export default function Hero() {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   const options = useMemo(() => config, []);
 
   if (init) {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute top-0 left-0 bottom-0 right-0 w-full h-auto z-10 mix-blend-difference "
+        className="absolute top-0 left-0 bottom-0 right-0 w-full h-auto z-20 mix-blend-difference "
       />
     );
   }
