@@ -6,24 +6,38 @@ import React, { Suspense } from "react";
 import PROJECTS from "@/lib/projects.json";
 import { useTranslations } from "next-intl";
 
+// export async function generateMetadata({ params, searchParams }) {
+//   const [project] = PROJECTS.filter((project) => project.slug === params.slug);
 
-export async function generateMetadata({ params, searchParams }) {
-  const [project] = PROJECTS.filter((project) => project.slug === params.slug);
-
-  return {
-    title: `Projektai - ${project.title}`,
-    openGraph: {
-      images: [{
-        url: `${project.coverImage}`
-      }]
-    }
-  };
-}
+//   return {
+//     title: `Projektai - ${project.title}`,
+//     openGraph: {
+//       images: [
+//         {
+//           url: `${project.coverImage}`,
+//         },
+//       ],
+//     },
+//   };
+// }
 
 export default function page({ params }) {
-  const t = useTranslations("selectedProjectPage");
+  const t = useTranslations("productsDescription");
 
   const [project] = PROJECTS.filter((project) => project.slug === params.slug);
+  project.projectType = t(`products.${params.slug}.projectType`);
+  project.summary = t(`products.${params.slug}.summary`);
+  project.keyInfo = t(`products.${params.slug}.keyInfo`);
+  project.projectSteps = [
+    {
+      title: t(`products.${params.slug}.projectSteps.webStack.title`),
+      description: t(`products.${params.slug}.projectSteps.webStack.description`),
+    },
+    {
+      title: t(`products.${params.slug}.projectSteps.result.title`),
+      description: t(`products.${params.slug}.projectSteps.result.description`),
+    }
+  ];
 
   return (
     <div className="blockStyle pl-0 z-30">

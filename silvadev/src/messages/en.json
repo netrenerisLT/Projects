@@ -92,15 +92,79 @@
       }
     }
   },
+  "productsDescription": {
+    "loadingMessage": "Loading project...",
+    "technologyTitle": "Web Stack",
+    "resultTitle": "Result",
+    "projectLink": "Project Link",
+    "direction": "Type",
+    "client": "Client",
+    "products": {
+      "geoturas": {
+        "projectType": "Website",
+        "summary": "Geoturas offers a range of services, including cadastral surveying of land plots, preparation of topographic plans, and more.",
+        "keyInfo": "The website design was created and programming work was carried out. A query form was implemented and the website was optimized for SEO.",
+        "projectSteps": {
+          "webStack": {
+            "title": "Web Stack",
+            "description": "HTML/CSS, JavaScript ir ReactJS."
+          },
+          "result": {
+            "title": "Result",
+            "description": "Prioritizing user needs, we designed a minimalist website and ensured its functionality. We also integrated a query form for easy communication and analytics tools for informed decision-making."
+          }
+        }
+      },
+      "epsychology": {
+        "projectType": "Web platform",
+        "summary": "Epsychology offers services aimed at taking care of the mental health needs of society and helping people find a therapist more effectively.",
+        "keyInfo": "The website design was created and transferred to the WordPress system. User profile registration, video tutorial viewing tool, and other features were implemented.",
+        "projectSteps": {
+          "webStack": {
+            "title": "Web Stack",
+            "description": "WordPress, CSS, JavaScript, PHP."
+          },
+          "result": {
+            "title": "Result",
+            "description": "Addressing the client's needs, we crafted a website with a user-friendly content management system (CMS) for easy updates.  We seamlessly integrated features like user profile registration, video tutorial viewing, and registration for both psychologists and their clients.  This empowers a streamlined experience, with options for service payments and monthly subscriptions. Powerful analytics tools provide valuable insights, and we even trained the client to manage their website content."
+          }
+        }
+      },
+      "juozasbaranauskas": {
+        "projectType": "Website",
+        "summary": "Juozas Baranauskas helps businesses achieve their sustainable packaging goals. He offers various services to companies looking to create new eco-friendly packaging or adapt existing ones.",
+        "keyInfo": "The website design was created and transferred to the WordPress system. A query form was implemented, SEO optimization was performed, and the client was trained to edit the content.",
+        "projectSteps": {
+          "webStack": {
+            "title": "Web Stack",
+            "description": "WordPress, CSS."
+          },
+          "result": {
+            "title": "Result",
+            "description": "Considering the client's goals, we designed a user-friendly website built on a popular content management system. To track website performance, we also implemented analytical data viewing tools. Furthermore, the client received training to independently manage their website content."
+          }
+        }
+      },
+      "packneat": {
+        "projectType": "Website",
+        "summary": "PACKnEAT offers innovative, eco-friendly packaging designed for takeaway and storage of various foods.",
+        "keyInfo": "The website design was created and transferred to the WordPress system. A query form was implemented, SEO optimization was performed, and the client was trained to edit the content.",
+        "projectSteps": {
+          "webStack": {
+            "title": "Web Stack",
+            "description": "WordPress, CSS."
+          },
+          "result": {
+            "title": "Result",
+            "description": "Considering the client's vision, we designed a minimalist yet attractive website built on a user-friendly content management system.  For easy communication, we integrated a query form.  To track website performance, we also implemented analytical data viewing tools. Additionally, the client received training to edit their website content independently."
+          }
+        }
+      }
+    }
+  },
   "projectGridPage": {
     "loadingMessage": "Loading projects...",
     "title": "Projects"
-  },
-  "selectedProjectPage": {
-    "loadingMessage": "Loading project...",
-    "projectLink": "Project Link",
-    "direction": "Type",
-    "client": "Client"
   },
   "footerPage": {
     "developedBy": "Developed by",

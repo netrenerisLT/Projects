@@ -11,8 +11,12 @@ import { useTranslations } from "next-intl";
 
 const Homepage = () => {
   const t = useTranslations("indexPage");
+  const pt = useTranslations("productsDescription");
 
   const featuredProjects = PROJECTS.filter((item) => item.isFeatured === true);
+  featuredProjects[0].summary = pt(`products.epsychology.summary`);
+  featuredProjects[1].summary = pt(`products.geoturas.summary`);
+  console.log(featuredProjects)
   return (
     <>
       <div className="h-screen flex flex-col justify-end relative">

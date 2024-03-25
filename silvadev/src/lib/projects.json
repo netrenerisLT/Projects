@@ -28,18 +28,6 @@
         "title": "epsychology nuotrauka 5",
         "imageUrl": "/projects/epsychology/epsychology-6.jpg"
       }
-    ],
-    "summary": "Epsychology siūlo paslaugas kuriomis siekiama  pasirūpinti visuomenės psichiniais poreikiais ir padėti žmonėms efektyviau rasti terapeutą.",
-    "keyInfo": "Sukurtas svetainės dizainas ir perkeltas į 'WordPress' sistemą. Įdiegta vartotojų profilio registracija, vaizdo mokymų įrašų peržiūrėjimo įrankis ir kt.",
-    "projectSteps": [
-      {
-        "title": "Technologija",
-        "description": "WordPress, CSS, JavaScript, PHP."
-      },
-      {
-        "title": "Rezultatas",
-        "description": "Atsižvelgdami į kliento poreikius, sukūrėme patrauklaus dizaino puslapį ir paruošėme funkcionalią svetainę su populiaria turinio valdymo sistema. Taip pat pridėjome vartotojų profilių registraciją, vaizdo mokymų peržiūros funkcionalumą, registraciją pas psichologijos specialistą, mokėjimo už paslaugas ir mėnesinės prenumeratos galimybes, analitinės statistikos peržiūros įrankius, ir klientui suteikėme mokymus, kaip redaguoti svetainės turinį."
-      }
     ]
   },
   {
@@ -47,7 +35,6 @@
     "slug": "geoturas",
     "isFeatured": true,
     "projectUrl": "https://www.geoturas.lt/",
-    "projectType": "El. svetainė",
     "clientName": "Geoturas, IĮ",
     "coverImage": "/projects/geoturas/geoturas-1.jpg",
     "projectImages": [
@@ -67,18 +54,6 @@
         "title": "Geoturas nuotrauka 4",
         "imageUrl": "/projects/geoturas/geoturas-4.jpg"
       }
-    ],
-    "summary": "Geoturas siūlo įvairias paslaugas, įskaitant žemės sklypų kadastrinius matavimus, topografinių planų sudarymą ir kt.",
-    "keyInfo": "Sukurtas svetainės dizainas ir atlikti programavimo darbai. Įdiegta užklausų forma ir atlikta svetainės SEO optimizacija.",
-    "projectSteps": [
-      {
-        "title": "Technologija",
-        "description": "HTML/CSS, JavaScript ir ReactJS."
-      },
-      {
-        "title": "Rezultatas",
-        "description": "Atsižvelgdami į kliento poreikius, sukūrėme minimalistinio dizaino puslapį ir paruošėme svetainę. Taip pat įdiegėme užklausų formą ir analitinių duomenų peržiūros įrankius."
-      }
     ]
   },
   {
@@ -86,7 +61,6 @@
     "slug": "juozasbaranauskas",
     "isFeatured": false,
     "projectUrl": "https://www.juozasbaranauskas.com/",
-    "projectType": "El. svetainė",
     "clientName": "Juozas Baranauskas",
     "coverImage": "/projects/juozasbaranauskas/juozasbaranauskas-1.jpg",
     "projectImages": [
@@ -110,18 +84,6 @@
         "title": "juozasbaranauskas nuotrauka 5",
         "imageUrl": "/projects/juozasbaranauskas/juozasbaranauskas-5.jpg"
       }
-    ],
-    "summary": "Juozas Baranauskas padeda verslams siekti ekologiškų pakuočių tikslų. Jis siūlo įvairias paslaugas įmonėms, norinčioms sukurti naujas ekologiškas pakuotes arba adaptuoti jau esamas.",
-    "keyInfo": "Svetainės dizainas perkeltas į 'WordPress' sistemą. Atlikta SEO optimizacija ir klientas apmokytas redaguoti ir viešinti naują turinį.",
-    "projectSteps": [
-      {
-        "title": "Technologija",
-        "description": "WordPress."
-      },
-      {
-        "title": "Rezultatas",
-        "description": "Atsižvelgdami į kliento poreikius, paruošėme svetainę su populiaria turinio valdymo sistema. Papildomai įdiegėme analitinių duomenų peržiūros įrankius, bei klientas buvo apmokytas savarankiškai redaguoti svetainės turinį."
-      }
     ]
   },
   {
@@ -129,7 +91,6 @@
     "slug": "packneat",
     "isFeatured": false,
     "projectUrl": "https://packneat.com/",
-    "projectType": "El. svetainė",
     "clientName": "PACKnEAT",
     "coverImage": "/projects/packneat/packneat-1.jpg",
     "projectImages": [
@@ -152,18 +113,6 @@
       {
         "title": "packneat nuotrauka 5",
         "imageUrl": "/projects/packneat/packneat-5.jpg"
-      }
-    ],
-    "summary": "PACKnEAT siūlo novatoriško dizaino ekologišką pakuotę, skirtą įvairaus maisto išsinešimui ir laikymui.",
-    "keyInfo": "Sukurtas svetainės dizainas ir perkeltas į 'WordPress' sistemą. Taip pat įdiegta užklausų forma, atlikta SEO optimizacija ir klientas apmokytas redaguoti turinį.",
-    "projectSteps": [
-      {
-        "title": "Technologija",
-        "description": "WordPress."
-      },
-      {
-        "title": "Rezultatas",
-        "description": "Atsižvelgdami į kliento poreikius, sukūrėme minimalistinio ir patrauklaus dizaino puslapį bei paruošėme svetainę su populiaria turinio valdymo sistema. Papildomai įdiegėme užklausų formą ir analitinių duomenų peržiūros įrankius, bei klientas buvo apmokytas savarankiškai redaguoti svetainės turinį."
       }
     ]
   }
