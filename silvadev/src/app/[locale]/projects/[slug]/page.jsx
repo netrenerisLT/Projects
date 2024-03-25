@@ -5,21 +5,24 @@ import ImageSlider from "@/components/projects/ImageSlider";
 import React, { Suspense } from "react";
 import PROJECTS from "@/lib/projects.json";
 import { useTranslations } from "next-intl";
+import TextLeftZone from "@/components/others/TextLeftZone";
+import { Link } from "@/navigation";
+import ArrowIcon from "@/components/others/ArrowIcon";
 
-// export async function generateMetadata({ params, searchParams }) {
-//   const [project] = PROJECTS.filter((project) => project.slug === params.slug);
+export async function generateMetadata({ params, searchParams }) {
+  const [project] = PROJECTS.filter((project) => project.slug === params.slug);
 
-//   return {
-//     title: `Projektai - ${project.title}`,
-//     openGraph: {
-//       images: [
-//         {
-//           url: `${project.coverImage}`,
-//         },
-//       ],
-//     },
-//   };
-// }
+  return {
+    title: `Projektai - ${project.title}`,
+    openGraph: {
+      images: [
+        {
+          url: `${project.coverImage}`,
+        },
+      ],
+    },
+  };
+}
 
 export default function page({ params }) {
   const t = useTranslations("productsDescription");
@@ -31,12 +34,14 @@ export default function page({ params }) {
   project.projectSteps = [
     {
       title: t(`products.${params.slug}.projectSteps.webStack.title`),
-      description: t(`products.${params.slug}.projectSteps.webStack.description`),
+      description: t(
+        `products.${params.slug}.projectSteps.webStack.description`
+      ),
     },
     {
       title: t(`products.${params.slug}.projectSteps.result.title`),
       description: t(`products.${params.slug}.projectSteps.result.description`),
-    }
+    },
   ];
 
   return (
@@ -45,16 +50,16 @@ export default function page({ params }) {
         fallback={<p className="textParagraph">{t("loadingMessage")}</p>}
       >
         <div className="w-full ">
-          <H1Title styles=" -ml-[28%] max-sm:pr-4 md:mb-12">
+          <H1Title styles="-ml-[27%] md:-ml-[30%] xl:-ml-[33%] xl:-ml-[33%] max-sm:pr-4 md:mb-12">
             {project.title}
           </H1Title>
           <div className="flex flex-col justify-between md:flex-row">
-            <div className="flex flex-col justify-between items-end md:items-start -ml-[25%] md:-ml-[28%] md:max-w-[25%] max-sm:mb-8">
+            <div className="flex flex-col justify-between items-end md:items-start -ml-[27%] md:-ml-[30%] xl:-ml-[31%]  md:max-w-[25%] max-sm:mb-8">
               <p className="textParagraph text-left max-sm:mr-4 max-sm:pb-4">
                 {project.summary}
               </p>
               <a
-                className="textBase text-colWaterLeaf max-sm:mr-4"
+                className="textParagraph text-colWaterLeaf max-sm:mr-4"
                 href={`${project.projectUrl}`}
                 target="_blank"
               >
@@ -80,6 +85,14 @@ export default function page({ params }) {
               {project.keyInfo}
             </H2Title>
             <Accordion information={project.projectSteps} />
+          </div>
+          <div className="max-md:hidden -ml-[27%] md:-ml-[31%] textParagraph relative ">
+            <Link href="." className="absolute left-0 -mt-16 flex gap-4">
+              <span className="rotate-180">
+                <ArrowIcon />
+              </span>
+              {t("backToProjects")}
+            </Link>
           </div>
         </div>
       </Suspense>

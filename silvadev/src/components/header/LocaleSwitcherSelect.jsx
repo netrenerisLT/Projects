@@ -6,7 +6,6 @@ import { useRouter, usePathname } from "../../navigation";
 export default function LocaleSwitcherSelect({ children, defaultValue }) {
   const router = useRouter();
   const pathname = usePathname();
-  const params = useParams();
   const [open, setOpen] = useState(false);
 
   function onSelectChange(event) {
@@ -23,7 +22,7 @@ export default function LocaleSwitcherSelect({ children, defaultValue }) {
   return (
     <label className="flex flex-col w-20 mx-auto relative capitalize ">
       <button
-        className=" hover:ring-1 uppercase hover:ring-colWhite focus:outline-none px-5 py-2.5 text-center "
+        className=" hover:ring-1 uppercase hover:ring-colBlack focus:outline-none px-5 py-2.5 text-center "
         type="button"
         onClick={() => setOpen(!open)}
       >

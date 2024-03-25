@@ -26,7 +26,7 @@ export default function ServicesFull() {
   return (
     <div className="relative mb-32 pl-4">
       <ul className="flex flex-wrap max-sm:gap-10 md:gap-x-10 md:gap-y-16 justify-between relative">
-        <TextLeftZone styles="items-start px-4 -ml-[36%] md:-ml-[32%]">
+        <TextLeftZone styles="items-start px-4 -ml-[36%] md:-ml-[33%] xl:-ml-[34.5%] text-left ">
           {t("fullServices.title")}
         </TextLeftZone>
         {SERVICES.map((item) => (

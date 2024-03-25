@@ -56,8 +56,8 @@ export default function MobileHeader({ urlLinks }) {
           <Link href="/" className="w-1/5 h-full relative">
             <Image src="SilvaDev-Ver-Black.svg" alt="Logotype" priority fill />
           </Link>
-          <p className="textParagraph text-colBlack ">
-            Rooted <br /> inDigital
+          <p className="textBase text-colBlack ">
+            Rooted <br /> in Digital
           </p>
         </div>
         <ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%] ml-4">

@@ -1,6 +1,6 @@
 [
   {
-    "title": "epsychology",
+    "title": "Epsychology",
     "slug": "epsychology",
     "isFeatured": true,
     "projectUrl": "https://epsychology.app/",
@@ -31,7 +31,7 @@
     ]
   },
   {
-    "title": "geoturas",
+    "title": "Geoturas",
     "slug": "geoturas",
     "isFeatured": true,
     "projectUrl": "https://www.geoturas.lt/",
@@ -57,7 +57,7 @@
     ]
   },
   {
-    "title": "juozasbaranauskas",
+    "title": "Juozas Baranauskas",
     "slug": "juozasbaranauskas",
     "isFeatured": false,
     "projectUrl": "https://www.juozasbaranauskas.com/",
@@ -87,7 +87,7 @@
     ]
   },
   {
-    "title": "packneat",
+    "title": "PacknEat",
     "slug": "packneat",
     "isFeatured": false,
     "projectUrl": "https://packneat.com/",

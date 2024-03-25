@@ -7,7 +7,7 @@ const Item = ({ title, index, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <li className="border-y-[1px] border-colJetBlack">
+    <li className="border-y-[1px] border-colJetBlack pl-6 pr-14">
       <button
         type="button"
         className="flex items-center text-left justify-between w-full px-4  h-28 focus:outline-none"
@@ -43,7 +43,7 @@ export default function Accordion({ information, title }) {
     <>
       <ul className="max-sm:-mb-[5.5rem] md:-mb-4 w-[100% - 5%] md:w-full max-sm:-ml-[26.5%] max-sm:z-10 bg-colBlack relative max-sm:border-l-[1px] max-sm:border-colJetBlack">
         {title && (
-          <TextLeftZone styles="h-28 items-center md:items-start px-4 max-sm:border-colJetBlack max-sm:border-t-[1px] md:-ml-[30%] ">
+          <TextLeftZone styles="h-28 items-center md:items-start px-4 max-sm:border-colJetBlack max-sm:border-t-[1px] md:-ml-[30%] xl:-ml-[33%] ">
             {title}
           </TextLeftZone>
         )}

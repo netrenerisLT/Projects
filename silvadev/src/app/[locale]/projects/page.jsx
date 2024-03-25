@@ -18,7 +18,7 @@ export default function page() {
 
   return (
     <div className="blockStyle md:pl-0 md:pb-32">
-      <H1Title styles="-ml-[30%] max-sm:pr-4">{t("title")}</H1Title>
+      <H1Title styles="-ml-[30%] xl:-ml-[33%] max-sm:pr-4">{t("title")}</H1Title>
       <Suspense
         fallback={<p className="textParagraph">{t("loadingMessage")}</p>}
       >

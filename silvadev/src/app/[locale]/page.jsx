@@ -12,24 +12,23 @@ import { useTranslations } from "next-intl";
 const Homepage = () => {
   const t = useTranslations("indexPage");
   const pt = useTranslations("productsDescription");
-
   const featuredProjects = PROJECTS.filter((item) => item.isFeatured === true);
   featuredProjects[0].summary = pt(`products.epsychology.summary`);
   featuredProjects[1].summary = pt(`products.geoturas.summary`);
-  console.log(featuredProjects)
   return (
     <>
       <div className="h-screen flex flex-col justify-end relative">
         <Image
-          src="/hero.svg"
+          src="/Silva-Hero-Trees.svg"
+          // src="/Silva-Hero-Trees.png"
           alt="Hero Image"
           fill
-          className="object-contain"
+          className="object-cover object-left"
         />
         <Parralax title={t("parralax")} />
       </div>
       <div className="blockStyle">
-        <H1Title styles=" pl-4 -ml-[32%] max-sm:pr-4">{t("title")}</H1Title>
+        <H1Title styles=" pl-4 -ml-[27%] md:-ml-[32%] xl:-ml-[34%] max-sm:pr-4">{t("title")}</H1Title>
         <H2Title styles=" pl-4 max-sm:-ml-[28%] text-left normal-case max-sm:pr-4">
           {t("subTitle")}
         </H2Title>

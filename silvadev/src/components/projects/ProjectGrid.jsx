@@ -12,7 +12,7 @@ export default function ProjectGrid({
       {projects.map((project, index) => (
         <li key={project.slug} className={`w-full aspect-video ${styles}`}>
           {project.isFeatured && withSummary && (
-            <TextLeftZone styles="items-start -ml-[26%]">
+            <TextLeftZone styles="items-start -ml-[26%] md:-ml-[27%] xl:-ml-[28%] ">
               {`0${index + 1}`}
             </TextLeftZone>
           )}

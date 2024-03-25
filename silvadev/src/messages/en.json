@@ -99,6 +99,7 @@
     "projectLink": "Project Link",
     "direction": "Type",
     "client": "Client",
+    "backToProjects": "Back to projects",
     "products": {
       "geoturas": {
         "projectType": "Website",

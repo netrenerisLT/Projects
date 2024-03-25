@@ -72,8 +72,7 @@ function ContactForm({
         );
     }
   }, [errors]);
-  const stylesFormInput =
-    "w-full py-3 px-4 ring-1 ring-inset ring-colBlack focus:ring-colWhite bg-colTransparent placeholder-colBlack outline-none h-full ";
+  const stylesFormInput = `w-full py-3 px-4 ring-1 ring-inset ring-colBlack focus:ring-colWhite bg-colTransparent placeholder-colBlack outline-none h-full `;
 
   return (
     <div

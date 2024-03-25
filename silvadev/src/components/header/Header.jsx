@@ -18,8 +18,8 @@ export default function Header() {
     <>
       <header className="h-20 fixed w-full z-50 mix-blend-difference max-md:mt-2 text-colWhite md:pr-20 md:pl-6 ">
         <div className="h-full flex items-center justify-between ">
-          <div className="flex w-3/12 h-full items-left justify-end md:justify-center">
-            <Link href="/" className="relative w-4/5 h-full">
+          <div className="flex w-3/12 h-full relative items-left justify-end md:justify-center">
+            <Link href="/" className="relative w-4/5 h-auto">
               <Image
                 className="max-md:hidden"
                 src="SilvaDev-Hor-White.svg"
@@ -37,8 +37,8 @@ export default function Header() {
             </Link>
           </div>
           <div className="flex w-9/12 flex-1 items-center justify-between px-4 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4 ">
-            <p className="textParagraph z-50 ">
-              Rooted <br /> inDigital
+            <p className="textBase z-50 ">
+              Rooted <br /> in Digital
             </p>
             <div className="max-md:hidden flex justify-between relative">
               <ul className="flex gap-16 items-center">

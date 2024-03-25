@@ -98,6 +98,7 @@
     "projectLink": "Projekto Nuoroda",
     "direction": "Kryptis",
     "client": "Klientas",
+    "backToProjects": "Grįžti į projektus",
     "products": {
       "geoturas": {
         "projectType": "El. svetainė",

@@ -36,7 +36,7 @@ export default function page() {
 
   return (
     <div className="blockStyle pl-0 ">
-      <H1Title styles=" -ml-[30%] max-sm:pr-4 pl-4">{t("title")}</H1Title>
+      <H1Title styles="-ml-[27%] md:-ml-[30%] xl:-ml-[33%]  max-sm:pr-4 pl-4">{t("title")}</H1Title>
       <H2Title styles="max-sm:-ml-[28%] text-left normal-case max-sm:pr-4 pl-4">
         {t("description")}
       </H2Title>
