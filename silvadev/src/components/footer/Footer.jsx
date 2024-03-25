@@ -2,6 +2,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 import Image from "next/image";
+import LogoVer from "../others/LogoVer";
 
 function Footer() {
   const t = useTranslations();
@@ -27,12 +28,9 @@ function Footer() {
       <div className="flex flex-col md:h-80 justify-between px-6 md:pr-8 md:pl-4 2xl:pr-14 2xl:pl-4 py-5 z-40  md:bg-colBlack">
         <div className="flex flex-col lg:flex-row justify-start md:justify-between gap-4 xl:pr-24">
           <Link href="/" className="relative h-20 w-24 xl:h-full xl:w-40">
-            <Image
-              src="SilvaDev-Ver-White.svg"
-              alt="Logotype"
-              priority
-              fill
-            />
+            <span className="fill-colWhite">
+              <LogoVer />
+            </span>
           </Link>
           <ul className="">
             <li>

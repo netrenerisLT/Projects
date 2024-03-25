@@ -7,6 +7,7 @@ import { Link } from "@/navigation";
 
 import LineSvg from "../others/LineSvg";
 import Image from "next/image";
+import LogoVer from "../others/LogoVer";
 
 const variants = {
   open: {
@@ -53,8 +54,10 @@ export default function MobileHeader({ urlLinks }) {
           <LineSvg whiteLine />
         </span>
         <div className="flex items-center justify-start ml-[5%] gap-4 w-screen h-20 mt-2 ">
-          <Link href="/" className="w-1/5 h-full relative">
-            <Image src="SilvaDev-Ver-Black.svg" alt="Logotype" priority fill />
+          <Link href="/" className="w-1/5 h-full relative mt-4">
+            <span className="fill-colBlack">
+              <LogoVer />
+            </span>
           </Link>
           <p className="textBase text-colBlack ">
             Rooted <br /> in Digital

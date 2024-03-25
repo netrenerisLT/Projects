@@ -29,7 +29,7 @@ const Homepage = () => {
         <Parralax title={t("parralax")} />
       </div>
       <div className="blockStyle">
-        <H1Title styles=" pl-4 -ml-[27%] md:-ml-[32%] xl:-ml-[34%] max-sm:pr-4">
+        <H1Title styles=" pl-4 -ml-[29%] md:-ml-[32%] xl:-ml-[34%] max-sm:pr-4">
           {t("title")}
         </H1Title>
         <H2Title styles=" pl-4 max-sm:-ml-[28%] text-left normal-case max-sm:pr-4">
@@ -38,7 +38,7 @@ const Homepage = () => {
         <ServicesSummary />
       </div>
       <div className="blockStyle">
-        <H1Title styles="pl-4 max-sm:-ml-[30%] max-sm:pr-4">
+        <H1Title styles="pl-4 max-sm:-ml-[28%] max-sm:pr-4">
           {t("selectedWork")}
         </H1Title>
         <ProjectGrid projects={featuredProjects} withSummary />
