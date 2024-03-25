@@ -1,7 +1,7 @@
 {
   "indexPage": {
     "title": "Services",
-    "subTitle": "Su daugiau nei 6 metų patirtimi mūsų komanda kuria ne tik vizualiai patrauklias, bet ir verslą auginančias interneto svetaines. Susisiekime ir aptarsime tavo svetainės vizijos įgyvendinimą!",
+    "subTitle": "For over 6 years, our team has been crafting websites that are both visually stunning and drive business growth. Let's chat and turn your website vision into reality!",
     "selectedWork": "Selected Work",
     "projects": "Projects",
     "parralax": "Website Development"
@@ -11,35 +11,35 @@
     "locale": "{locale, select, lt {LT} en {EN} other {Unknown}}"
   },
   "errorPages": {
-    "errorTitle": "There was an error",
-    "notfoundTitle": "Page not found",
+    "errorTitle": "There was an error.",
+    "notfoundTitle": "Page not found.",
     "buttonAction": "Go to homepage"
   },
   "aboutPage": {
     "title": "About Us",
-    "description": "Our team of experts has been creating user-friendly websites for more than 6 years, which are not only visually appealing and engaging but also leave a lasting impression. From idea to launch – we are here to realize your project vision and create a high-quality and professional-looking website.",
+    "description": "For over 6 years, our expert team has built user-friendly websites that not only captivate visitors but also leave a lasting impact. We offer a collaborative approach, partnering with you from initial concept to successful launch. Together, we will transform your vision into a high-quality, professional website that embodies your brand identity.",
     "howWeWork": {
       "title": "How We Work",
       "steps": {
         "needsDiscussion": {
-          "title": "Needs Discussion",
-          "description": "Our initial conversations are aimed at clarifying your project goals, required functionality, and other requirements. After that, we can plan a clear work schedule, set realistic deadlines, budget, etc."
+          "title": "Discussion of Needs",
+          "description": "We work closely with you to define your project goals, functionalities, and specific needs. This ensures a clear roadmap with realistic deadlines and budget for a successful launch."
         },
         "uxUi": {
           "title": "UX/UI",
-          "description": "If needed, we start with sketching, which presents the general appearance and feel of the website. Taking into account the needs, we create visually attractive and intuitive interfaces that will strengthen your brand identity, encourage user engagement, and growth."
+          "description": "We initiate the design process by crafting website concepts (when necessary). This ensures a visually striking and intuitive interface that aligns perfectly with your brand identity and actively encourages user engagement."
         },
         "websiteDevelopment": {
           "title": "Website Development",
-          "description": "We turn your idea into reality. We use proven coding practices to create secure systems. Each feature is meticulously developed and tested to ensure website quality."
+          "description": "Your vision, brought to life securely.  We leverage proven coding practices to craft secure systems, meticulously designing and testing each feature to guarantee a high-quality website that delivers on your vision."
         },
         "testing": {
           "title": "Testing",
-          "description": "Tests ensure that the website is stable, efficient, and secure. We usually use real devices, not emulators, to collect and analyze the test users' experience."
+          "description": "We use real devices for comprehensive testing, guaranteeing website stability, efficiency, and security. This delivers a seamless user experience for your audience."
         },
         "supportAndMaintenance": {
           "title": "Support and Maintenance",
-          "description": "Websites do not have a finish line. Once we deliver the solution, we will still be at your disposal for updates and scheduled maintenance."
+          "description": "Our commitment doesn't end at launch. We provide ongoing support for updates and scheduled maintenance, ensuring your website remains optimized and secure."
         }
       }
     },
@@ -48,19 +48,19 @@
       "steps": {
         "webDevelopment": {
           "title": "Website Development",
-          "description": "Šiandien visi yra „internete“, todėl nenorime kad susidurtumėte su apribojimais pasiekti tikslinę auditoriją. Kuriame svetaines atitinkančias tavo poreikius – nuo individualių / šabloninių svetainių iki internetinių parduotuvių ar jų integracijos su įvairiomis sistemomis ir įrankiais."
+          "description": "In today's digital landscape, a strong online presence is crucial for reaching your target audience. We create custom websites that cater to your specific needs, whether you require a unique design or a powerful e-commerce platform. We can also integrate your website with various systems and tools to streamline your operations. "
         },
         "storeCreation": {
-          "title": "ESHOP development",
-          "description": "Padidinkite pardavimus, prekės ženklo žinomumą ir auditorijos pasiekiamumą, naudodami efektyvius el. prekybos sprendimus. Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo – kuriame platformas, skatinančias pardavimus, užtikrinančias saugumą, gera vartotojų patirtį ir jų įsitraukimą."
+          "title": "E-shop Development",
+          "description": "Unleash the power of e-commerce: Supercharge your sales, skyrocket brand awareness, and connect with a wider audience. We craft user-friendly interfaces that keep customers engaged, seamlessly integrate essential systems (courier, payment, etc.), and streamline your operations – all while prioritizing security.  Focus on your business goals, and let us handle the e-commerce engine."
         },
         "siteMaintenance": {
-          "title": "Svetainių priežiūra",
-          "description": "Užtikrinkite savo svetainės saugumą, patikimumą ir našumą. Nuo reguliarių atnaujinimų ir saugos pataisų iki turinio valdymo ir našumo optimizavimo. Susikoncentruokite į savo projektą, o mes pasirūpinsime svetainės priežiūra."
+          "title": "Website Maintenance",
+          "description": "Peace of mind for your website: We ensure security, reliability, and performance with regular updates, security patches, content management, and optimization. Free yourself to focus on your core business objectives, while we ensure your website thrives."
         },
         "digitalExpertise": {
-          "title": "Skaitmeninis meistriškumas",
-          "description": "Patobulinkite savo projekto strategiją naudodami platų paslaugų spektrą. Su mūsų patikimais SEO ir socialinės rinkodaros, bei grafinio dizaino ir 2D animacijos (angl. motion) partneriais, siūlome platų paslaugų pasirinkimą, kad padidinti tavo projekto žinomumą ir auditorijos įsitraukimą."
+          "title": "Digital Mastery",
+          "description": "Enhance your project strategy with a wide range of services. Our trusted partners in SEO, social media marketing, graphic design, and 2D animation provide a comprehensive solution to amplify your project's visibility and captivate your audience."
         }
       }
     },
@@ -69,20 +69,20 @@
 
       "steps": {
         "webDevelopment": {
-          "title": "Svetainių kūrimas",
-          "description": "Šiandien visi yra „internete“, todėl nenorime kad susidurtumėte su apribojimais pasiekti tikslinę auditoriją. Kuriame svetaines atitinkančias tavo poreikius – nuo individualių / šabloninių svetainių iki internetinių parduotuvių ar jų integracijos su įvairiomis sistemomis ir įrankiais."
+          "title": "Website Development",
+          "description": "We partner with you to transform your website vision (custom or template design) into reality, from initial concept to successful launch."
         },
         "storeCreation": {
-          "title": "Parduotuvių kūrimas",
-          "description": "Padidinkite pardavimus, prekės ženklo žinomumą ir auditorijos pasiekiamumą, naudodami efektyvius el. prekybos sprendimus. Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo – kuriame platformas, skatinančias pardavimus, užtikrinančias saugumą, gera vartotojų patirtį ir jų įsitraukimą."
+          "title": "E-shop Development",
+          "description": "Streamlined user experience, from intuitive interfaces to integrated systems (courier, payment, etc.)."
         },
         "siteMaintenance": {
-          "title": "Svetainių priežiūra",
-          "description": "Užtikrinkite savo svetainės saugumą, patikimumą ir našumą. Nuo reguliarių atnaujinimų ir saugos pataisų iki turinio valdymo ir našumo optimizavimo. Susikoncentruokite į savo projektą, o mes pasirūpinsime svetainės priežiūra."
+          "title": "Website Maintenance",
+          "description": "Updates, performance, content, and security – we handle it all, keeping your site secure and running smoothly."
         },
         "digitalExpertise": {
-          "title": "Skaitmeninis meistriškumas",
-          "description": "Patobulinkite savo projekto strategiją naudodami platų paslaugų spektrą. Su mūsų patikimais SEO ir socialinės rinkodaros, bei grafinio dizaino ir 2D animacijos (angl. motion) partneriais, siūlome platų paslaugų pasirinkimą, kad padidinti tavo projekto žinomumą ir auditorijos įsitraukimą."
+          "title": "Digital Mastery",
+          "description": "We offer a wide range of services in marketing, graphic design, and 2D animation."
         }
       }
     }

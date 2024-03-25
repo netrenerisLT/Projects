@@ -1,4 +1,6 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "@/navigation";
+
 import DesktopMenu from "./DesktopMenu";
 import LocaleSwitcher from "./Language";
 

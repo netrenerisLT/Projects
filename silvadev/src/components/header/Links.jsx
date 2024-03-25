@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "@/navigation";
 
 const LINKS = [
   { url: "/about", title: "Apie Mus" },

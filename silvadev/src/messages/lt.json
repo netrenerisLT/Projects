@@ -12,7 +12,7 @@
   },
   "errorPages": {
     "errorTitle": "Įvyko klaida.",
-    "notfoundTitle": "Puslapis nerastas",
+    "notfoundTitle": "Puslapis nerastas.",
     "buttonAction": "Grįžti į pagrindinį"
   },
   "aboutPage": {
@@ -38,7 +38,7 @@
           "description": "Testai užtikrina, kad svetatnė yra stabili, naši ir saugi. Mes paprastai naudojame tikrus įrenginius, o ne emuliatorius, kad surinktume ir analizuotume bandomųjų vartotojų patirtį."
         },
         "supportAndMaintenance": {
-          "title": "Palaikymas ir priežiūra",
+          "title": "Paleidimas ir palaikymas",
           "description": "Svetainės neturi finišo linijos. Kai pateiksime sprendimą, vis dar būsime tavo žinioje dėl atnaujinimų ir suplanuotos priežiūros."
         }
       }

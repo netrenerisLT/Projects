@@ -2,7 +2,9 @@
 import { useState } from "react";
 import Links from "./Links";
 import { motion } from "framer-motion";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "@/navigation";
+
 import LineSvg from "../others/LineSvg";
 
 const variants = {

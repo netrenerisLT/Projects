@@ -1,5 +1,6 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "@/navigation";
 // import ArrowIcon from "./ArrowIcon";
 import ArrowIcon from "@/components/others/ArrowIcon";
 
