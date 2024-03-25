@@ -24,10 +24,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen  flex-col w-screen h-screen relative	 items-center justify-between ">
       <div className="">
-        <Image src="/hero2.png" fill style={{objectFit: "cover"}}	/>
+        <Image src="/hero2.png" fill style={{ objectFit: "cover" }} />
       </div>
       <div className="mix-blend-difference">
-      <ParticlesContainer></ParticlesContainer>
+        <ParticlesContainer></ParticlesContainer>
       </div>
     </main>
   );

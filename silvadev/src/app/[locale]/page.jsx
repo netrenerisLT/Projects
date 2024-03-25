@@ -7,7 +7,7 @@ import ProjectGrid from "@/components/projects/ProjectGrid";
 import Button from "@/components/others/Button";
 import PROJECTS from "@/lib/projects.json";
 import { useTranslations } from "next-intl";
-
+import Hero from "@/components/others/Hero";
 
 const Homepage = () => {
   const t = useTranslations("indexPage");
@@ -18,17 +18,20 @@ const Homepage = () => {
   return (
     <>
       <div className="h-screen flex flex-col justify-end relative">
+        <Hero />
         <Image
           src="/Silva-Hero-Trees.svg"
           // src="/Silva-Hero-Trees.png"
           alt="Hero Image"
           fill
-          className="object-cover object-left"
+          className="object-cover object-left z-0"
         />
         <Parralax title={t("parralax")} />
       </div>
       <div className="blockStyle">
-        <H1Title styles=" pl-4 -ml-[27%] md:-ml-[32%] xl:-ml-[34%] max-sm:pr-4">{t("title")}</H1Title>
+        <H1Title styles=" pl-4 -ml-[27%] md:-ml-[32%] xl:-ml-[34%] max-sm:pr-4">
+          {t("title")}
+        </H1Title>
         <H2Title styles=" pl-4 max-sm:-ml-[28%] text-left normal-case max-sm:pr-4">
           {t("subTitle")}
         </H2Title>
