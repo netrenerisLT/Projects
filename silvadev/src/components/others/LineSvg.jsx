@@ -6,7 +6,7 @@ function LineSvg({ whiteLine }) {
     // <Image src="/Line.svg" alt="Line path" height={10} width={600} />
     <svg
       height="100%"
-      width="2px"
+      width={whiteLine ? "1px" : "2px"}
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
     >

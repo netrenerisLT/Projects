@@ -32,7 +32,7 @@ export default function ServicesFull() {
         {SERVICES.map((item) => (
           <li key={item.title} className="w-full lg:w-[46%] box-content">
             <div>
-              <h3 className="textH3 mb-3 md:mb-4 lg:mb-5 max-w-[30%]">
+              <h3 className="textH3 mb-3 md:mb-4 lg:mb-5">
                 {item.title}
               </h3>
               <p className="textParagraph max-sm:pr-4">{item.description}</p>

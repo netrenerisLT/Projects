@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 import { Link } from "@/navigation";
 
 import LineSvg from "../others/LineSvg";
+import Image from "next/image";
 
 const variants = {
   open: {
     // x: 0,
-    clipPath: "circle(1200px at 100% 0%)",
+    clipPath: "circle(1800px at 100% 0%)",
     opacity: 1,
     transition: {
       type: "spring",
@@ -30,7 +31,7 @@ const variants = {
   },
 };
 
-export default function MobileHeader() {
+export default function MobileHeader({ urlLinks }) {
   const [activeMobile, setActiveMobile] = useState(false);
   function handleClick() {
     setActiveMobile(false);
@@ -43,7 +44,7 @@ export default function MobileHeader() {
       <motion.div
         initial={false}
         variants={variants}
-        className="fixed flex flex-col items-start justify-between top-0 left-0 px-8 pb-4 h-full max-w-md w-full z-50 bg-colWaterLeaf "
+        className="fixed flex flex-col items-start justify-between top-0 left-0  pb-5 h-full w-full z-50 bg-colWaterLeaf"
       >
         <span className="absolute top-0 left-[5%] h-[100%]">
           <LineSvg whiteLine />
@@ -51,31 +52,27 @@ export default function MobileHeader() {
         <span className="absolute top-0 left-[25%] h-[100%]">
           <LineSvg whiteLine />
         </span>
-        <div className="flex items-center">
-          <Link href="/" className=" w-full h-full pr-10">
-            {/* <Image>Logo</Image> */}
-            logo
+        <div className="flex items-center justify-start ml-[5%] gap-4 w-screen h-20 mt-2 ">
+          <Link href="/" className="w-1/5 h-full relative">
+            <Image src="SilvaDev-Ver-Black.svg" alt="Logotype" priority fill />
           </Link>
           <p className="textParagraph text-colBlack ">
             Rooted <br /> inDigital
           </p>
         </div>
-        <ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%]">
-          <Links offMobileMenu={handleClick} />
-          <li>
-            <Link onClick={handleClick} href="#footer">
-              Susisiekti
-            </Link>
-          </li>
+        <ul className="text-colBlack text-font30pt flex flex-col gap-8 items-start px-[25%] ml-4">
+          <Links offMobileMenu={handleClick} urlLinks={urlLinks} />
         </ul>
-        <div className="text-font15pt text-colWhite flex flex-col gap-4 px-[25%]">
+        <div className="text-font15pt text-colWhite flex flex-col gap-4 px-[25%] ml-4">
           <a href="mailto:hello@silvadev.com">hello@silvadev.com</a>
           <a href="tel:+37067859404">+37067859404</a>
         </div>
       </motion.div>
 
       <motion.button
-        className={`flex w-16 h-16 flex-col justify-center fixed items-center top-2 right-2 z-50 ${!activeMobile && "mix-blend-difference"}`}
+        className={`flex w-16 h-16 flex-col justify-center fixed items-center top-4 right-2 z-50 ${
+          !activeMobile && "mix-blend-difference"
+        }`}
         onClick={() => setActiveMobile(!activeMobile)}
         whileHover={{
           transition: { duration: 1, type: "spring" },

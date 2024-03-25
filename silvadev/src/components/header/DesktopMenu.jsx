@@ -2,7 +2,7 @@ import Links from "./Links";
 
 export default function MenuLinks({ offMobileMenu, navLinksMotion }) {
   return (
-    <ul className="flex gap-24 items-center">
+    <ul className="flex gap-16 items-center">
       <Links />
     </ul>
   );

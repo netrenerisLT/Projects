@@ -6,6 +6,11 @@
     "projects": "Projects",
     "parralax": "Website Development"
   },
+  "menuLinks": {
+    "aboutUs": "About Us",
+    "projects": "Projects",
+    "contactUs": "Contact Us"
+  },
   "localeSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, lt {LT} en {EN} other {Unknown}}"
@@ -47,19 +52,19 @@
       "title": "Services",
       "steps": {
         "webDevelopment": {
-          "title": "Website Development",
+          "title": "Website\nDevelopment",
           "description": "In today's digital landscape, a strong online presence is crucial for reaching your target audience. We create custom websites that cater to your specific needs, whether you require a unique design or a powerful e-commerce platform. We can also integrate your website with various systems and tools to streamline your operations. "
         },
         "storeCreation": {
-          "title": "E-shop Development",
+          "title": "E-shop\nDevelopment",
           "description": "Unleash the power of e-commerce: Supercharge your sales, skyrocket brand awareness, and connect with a wider audience. We craft user-friendly interfaces that keep customers engaged, seamlessly integrate essential systems (courier, payment, etc.), and streamline your operations – all while prioritizing security.  Focus on your business goals, and let us handle the e-commerce engine."
         },
         "siteMaintenance": {
-          "title": "Website Maintenance",
+          "title": "Website\nMaintenance",
           "description": "Peace of mind for your website: We ensure security, reliability, and performance with regular updates, security patches, content management, and optimization. Free yourself to focus on your core business objectives, while we ensure your website thrives."
         },
         "digitalExpertise": {
-          "title": "Digital Mastery",
+          "title": "Digital\nMastery",
           "description": "Enhance your project strategy with a wide range of services. Our trusted partners in SEO, social media marketing, graphic design, and 2D animation provide a comprehensive solution to amplify your project's visibility and captivate your audience."
         }
       }
@@ -69,19 +74,19 @@
 
       "steps": {
         "webDevelopment": {
-          "title": "Website Development",
+          "title": "Website\nDevelopment",
           "description": "We partner with you to transform your website vision (custom or template design) into reality, from initial concept to successful launch."
         },
         "storeCreation": {
-          "title": "E-shop Development",
+          "title": "E-shop\nDevelopment",
           "description": "Streamlined user experience, from intuitive interfaces to integrated systems (courier, payment, etc.)."
         },
         "siteMaintenance": {
-          "title": "Website Maintenance",
+          "title": "Website\nMaintenance",
           "description": "Updates, performance, content, and security – we handle it all, keeping your site secure and running smoothly."
         },
         "digitalExpertise": {
-          "title": "Digital Mastery",
+          "title": "Digital\nMastery",
           "description": "We offer a wide range of services in marketing, graphic design, and 2D animation."
         }
       }

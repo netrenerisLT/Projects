@@ -53,9 +53,9 @@ export const metadata = {
 export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
-      <body className="w-screen h-full font-montserrat font-medium bg-colBlack ">
-        <Header />
-        <MobileHeader />
+      <body className="w-screen h-full font-montserrat font-medium bg-colBlack relative">
+          <Header />
+          {/* <MobileHeader /> */}
         <div className="flex w-full overflow-hidden">
           <ProgressBar />
           <div className="bg-colTransparent w-3/12 z-10 relative">

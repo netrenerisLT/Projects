@@ -15,13 +15,13 @@
   }
 
   .textH1 {
-    @apply text-font80pt capitalize xl:text-font200pt text-colWhite;
+    @apply text-font80pt capitalize xl:text-font200pt text-colWhite whitespace-pre-line;
   }
   .textH2 {
-    @apply text-font28pt md:text-font30pt capitalize xl:text-font50pt text-colWaterLeaf;
+    @apply text-font28pt md:text-font30pt capitalize xl:text-font50pt text-colWaterLeaf whitespace-pre-line;
   }
   .textH3 {
-    @apply text-font28pt md:text-font30pt capitalize xl:text-font50pt text-colWhite;
+    @apply text-font28pt md:text-font30pt capitalize xl:text-font50pt text-colWhite  whitespace-pre-line;
   }
   .textParagraph {
     @apply text-font15pt md:text-font20pt xl:text-font20pt text-colWhite;

@@ -23,7 +23,7 @@ export default function LocaleSwitcherSelect({ children, defaultValue }) {
   return (
     <label className="flex flex-col w-20 mx-auto relative capitalize ">
       <button
-        className="textParagraph hover:ring-1 uppercase hover:ring-colWhite focus:outline-none px-5 py-2.5 text-center "
+        className=" hover:ring-1 uppercase hover:ring-colWhite focus:outline-none px-5 py-2.5 text-center "
         type="button"
         onClick={() => setOpen(!open)}
       >
@@ -32,7 +32,7 @@ export default function LocaleSwitcherSelect({ children, defaultValue }) {
       {open && (
         <div
           onClick={onSelectChange}
-          className="z-10 absolute top-full left-0 bg-colWhite textParagraph text-colBlack w-full text-center ring-1 ring-colWhite"
+          className="z-10 absolute top-full left-0 bg-colWhite text-colBlack w-full text-center ring-1 ring-colWhite"
         >
           {children}
         </div>

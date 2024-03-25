@@ -32,7 +32,7 @@ export default function ServicesSummary() {
               className="w-[43%] md:w-[46%] box-content max-sm:flex-none "
             >
               <div>
-                <h3 className="textH3 mb-3 md:mb-4 lg:mb-5 max-w-[30%]">
+                <h3 className="textH3 mb-3 md:mb-4 lg:mb-5">
                   {item.title}
                 </h3>
                 <p className="textParagraph">{item.description}</p>

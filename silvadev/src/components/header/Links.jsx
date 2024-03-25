@@ -1,16 +1,10 @@
 // import Link from "next/link";
 import { Link } from "@/navigation";
 
-const LINKS = [
-  { url: "/about", title: "Apie Mus" },
-  { url: "/projects", title: "Projektai" },
-  // { url: "/contact", title: "Susisiekti" },
-];
-
-function Links({ offMobileMenu }) {
+function Links({ offMobileMenu, urlLinks }) {
   return (
     <>
-      {LINKS.map((link, index) => (
+      {urlLinks.map((link, index) => (
         <li onClick={offMobileMenu} key={link.title}>
           <Link href={link.url} key={link.title} prefetch>
             {link.title}

@@ -6,6 +6,11 @@
     "projects": "Projektai",
     "parralax": "Svetainių kūrimas"
   },
+  "menuLinks": {
+    "aboutUs": "Apie Mus",
+    "projects": "Projektai",
+    "contactUs": "Susisiekti"
+  },
   "localeSwitcher": {
     "label": "Pakeisti kalbą",
     "locale": "{locale, select, lt {LT} en {EN} other {Unknown}}"
@@ -47,19 +52,19 @@
       "title": "Paslaugos",
       "steps": {
         "webDevelopment": {
-          "title": "Svetainių kūrimas",
+          "title": "Svetainių\nkūrimas",
           "description": "Šiandien visi yra „internete“, todėl nenorime kad susidurtumėte su apribojimais pasiekti tikslinę auditoriją. Kuriame svetaines atitinkančias tavo poreikius – nuo individualių / šabloninių svetainių iki internetinių parduotuvių ar jų integracijos su įvairiomis sistemomis ir įrankiais."
         },
         "storeCreation": {
-          "title": "Parduotuvių kūrimas",
+          "title": "Parduotuvių\nkūrimas",
           "description": "Padidinkite pardavimus, prekės ženklo žinomumą ir auditorijos pasiekiamumą, naudodami efektyvius el. prekybos sprendimus. Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo – kuriame platformas, skatinančias pardavimus, užtikrinančias saugumą, gera vartotojų patirtį ir jų įsitraukimą."
         },
         "siteMaintenance": {
-          "title": "Svetainių priežiūra",
+          "title": "Svetainių\npriežiūra",
           "description": "Užtikrinkite savo svetainės saugumą, patikimumą ir našumą. Nuo reguliarių atnaujinimų ir saugos pataisų iki turinio valdymo ir našumo optimizavimo. Susikoncentruokite į savo projektą, o mes pasirūpinsime svetainės priežiūra."
         },
         "digitalExpertise": {
-          "title": "Skaitmeninis meistriškumas",
+          "title": "Skaitmeninis\nmeistriškumas",
           "description": "Patobulinkite savo projekto strategiją naudodami platų paslaugų spektrą. Su mūsų patikimais SEO ir socialinės rinkodaros, bei grafinio dizaino ir 2D animacijos (angl. motion) partneriais, siūlome platų paslaugų pasirinkimą, kad padidinti tavo projekto žinomumą ir auditorijos įsitraukimą."
         }
       }
@@ -68,19 +73,19 @@
       "scrollAction": "Slinkite į kairę",
       "steps": {
         "webDevelopment": {
-          "title": "Svetainių kūrimas",
+          "title": "Svetainių\nkūrimas",
           "description": "Nuo idėjos iki paleidimo, kokybiškų individualių ir šabloninių dizaino svetainių kūrimas."
         },
         "storeCreation": {
-          "title": "Parduotuvių kūrimas",
+          "title": "Parduotuvių\nkūrimas",
           "description": "Nuo intuityvių vartotojo sąsajų iki sklandaus kurjerių, mokėjimų ar kt. sistemų integravimo."
         },
         "siteMaintenance": {
-          "title": "Svetainių priežiūra",
+          "title": "Svetainių\npriežiūra",
           "description": "Reguliarūs atnaujinimai, našumo optimizavimas, turinio valdymas, saugos pataisų patikra ir kt."
         },
         "digitalExpertise": {
-          "title": "Skaitmeninis meistriškumas",
+          "title": "Skaitmeninis\nmeistriškumas",
           "description": "Siūlome platų paslaugų pasirinkimą: rinkodaros, grafinio dizaino ir 2D animacijos srityje."
         }
       }
