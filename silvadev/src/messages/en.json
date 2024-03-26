@@ -94,7 +94,7 @@
   },
   "productsDescription": {
     "loadingMessage": "Loading project...",
-    "technologyTitle": "Web Stack",
+    "technologyTitle": "Tech Stack",
     "resultTitle": "Result",
     "projectLink": "Project Link",
     "direction": "Type",
@@ -107,7 +107,7 @@
         "keyInfo": "The website design was created and programming work was carried out. A query form was implemented and the website was optimized for SEO.",
         "projectSteps": {
           "webStack": {
-            "title": "Web Stack",
+            "title": "Tech Stack",
             "description": "HTML/CSS, JavaScript ir ReactJS."
           },
           "result": {
@@ -122,7 +122,7 @@
         "keyInfo": "The website design was created and transferred to the WordPress system. User profile registration, video tutorial viewing tool, and other features were implemented.",
         "projectSteps": {
           "webStack": {
-            "title": "Web Stack",
+            "title": "Tech Stack",
             "description": "WordPress, CSS, JavaScript, PHP."
           },
           "result": {
@@ -137,7 +137,7 @@
         "keyInfo": "The website design was created and transferred to the WordPress system. A query form was implemented, SEO optimization was performed, and the client was trained to edit the content.",
         "projectSteps": {
           "webStack": {
-            "title": "Web Stack",
+            "title": "Tech Stack",
             "description": "WordPress, CSS."
           },
           "result": {
@@ -152,7 +152,7 @@
         "keyInfo": "The website design was created and transferred to the WordPress system. A query form was implemented, SEO optimization was performed, and the client was trained to edit the content.",
         "projectSteps": {
           "webStack": {
-            "title": "Web Stack",
+            "title": "Tech Stack",
             "description": "WordPress, CSS."
           },
           "result": {
