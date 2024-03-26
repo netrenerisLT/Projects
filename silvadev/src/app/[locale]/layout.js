@@ -39,7 +39,7 @@ export const metadata = {
     siteName: "SilvaDev",
     images: [
       {
-        url: "https://epsychology.app/wp-content/uploads/2021/12/EP_logo_en.webp", // Must be an absolute URL
+        url: "https://i.imgur.com/Nl9eiux.png", // Must be an absolute URL
         width: 798,
         height: 81,
       },
@@ -53,8 +53,8 @@ export default function RootLayout({ children, params: { locale } }) {
   return (
     <html lang={locale}>
       <body className="w-screen h-full font-montserrat font-medium bg-colBlack relative">
-          <Header />
-          {/* <MobileHeader /> */}
+        <Header />
+        {/* <MobileHeader /> */}
         <div className="flex w-full overflow-hidden">
           <ProgressBar />
           <div className="bg-colTransparent w-3/12 z-10 relative">
