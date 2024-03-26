@@ -50,7 +50,7 @@ export default function page({ params }) {
         fallback={<p className="textParagraph">{t("loadingMessage")}</p>}
       >
         <div className="w-full ">
-          <H1Title styles="-ml-[27%] md:-ml-[30%] xl:-ml-[33%] xl:-ml-[33%] max-sm:pr-4 md:mb-12">
+          <H1Title styles="-ml-[27%] md:-ml-[30%] xl:-ml-[33%] xl:-ml-[33%] max-sm:pr-4 md:mb-12 max-sm:text-font50pt">
             {project.title}
           </H1Title>
           <div className="flex flex-col justify-between md:flex-row">
