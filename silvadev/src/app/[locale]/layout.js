@@ -4,7 +4,6 @@ import Header from "@/components/header/Header.jsx";
 import LineSvg from "@/components/others/LineSvg.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 import ProgressBar from "../../components/others/ProgressBar";
-import MobileHeader from "@/components/header/MobileMenu";
 
 export const metadata = {
   metadataBase: new URL("https://silvadev.com"),

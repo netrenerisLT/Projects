@@ -20,11 +20,11 @@ const Homepage = () => {
       <div className="h-screen flex flex-col justify-end relative">
         <Hero />
         <Image
-          src="/Silva-Hero-Trees.svg"
-          // src="/Silva-Hero-Trees.png"
-          alt="Hero Image"
-          fill
           className="object-cover object-left z-10 -ml-[3px] w-auto"
+          src="/Silva-Hero-Trees.svg"
+          alt="Forest image"
+          priority
+          fill
         />
         <Parralax title={t("parralax")} />
       </div>

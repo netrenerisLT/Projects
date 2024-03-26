@@ -10,6 +10,11 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      extend: {
+        zIndex: {
+          '100': '100',
+        }
+      },
       fontSize: {
         base: "1rem",
         font15pt: ["1rem", "1.625rem"],

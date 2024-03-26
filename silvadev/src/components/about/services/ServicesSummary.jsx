@@ -29,7 +29,7 @@ export default function ServicesSummary() {
           {SERVICES.map((item) => (
             <li
               key={item.title}
-              className="w-[43%] md:w-[46%] box-content max-sm:flex-none "
+              className="w-[40%] md:w-[46%] box-content max-sm:flex-none "
             >
               <div>
                 <h3 className="textH3 mb-3 md:mb-4 lg:mb-5">
