@@ -4,6 +4,7 @@ import Header from "@/components/header/Header.jsx";
 import LineSvg from "@/components/others/LineSvg.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 import ProgressBar from "../../components/others/ProgressBar";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   metadataBase: new URL("https://silvadev.com"),
@@ -44,7 +45,7 @@ export const metadata = {
         height: 81,
       },
     ],
-    locale: "lt_LT",
+    locale: "lt-LT",
     type: "website",
   },
 };
@@ -78,6 +79,7 @@ export default function RootLayout({ children, params: { locale } }) {
           </div>
         </div>
       </body>
+      <GoogleAnalytics gaId="G-MY89CRLB51" />
     </html>
   );
 }
